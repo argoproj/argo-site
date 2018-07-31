@@ -28,7 +28,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "publish": "gh-pages -b master -d public -r git@github.com:argoproj/argoproj.github.io.git",
+    "deploy": "gh-pages -b master -d public -r git@github.com:argoproj/argoproj.github.io.git",
     "start": "gatsby develop",
     "lint": "tslint --project ./tsconfig.json"
   },
