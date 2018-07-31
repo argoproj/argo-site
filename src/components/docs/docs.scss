@@ -1,7 +1,12 @@
-@import '../../common/styles/config';
+@import '../../styles/config';
 
 .docs {
     position: relative;
+
+    &__left-nav {
+        float: left;
+    }
+
     &__nav-button {
         position: relative;
         display: block;

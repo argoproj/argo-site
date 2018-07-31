@@ -1,11 +1,11 @@
 $body-font-family: 'Muli', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Heebo');
-@import '../common/styles/config';
+@import '../../styles/config';
 
 @import 'node_modules/foundation-sites/scss/foundation';
 
-$fa-font-path: '../../node_modules/font-awesome/fonts';
+$fa-font-path: '../../../node_modules/font-awesome/fonts';
 @import 'node_modules/font-awesome/scss/font-awesome';
 
 @include foundation-global-styles;
@@ -59,7 +59,7 @@ body {
         z-index: 10;
         height: $header-height;
         line-height: $header-height;
-        background: linear-gradient(to right, rgba(#270c53, 0.9) 0%, rgba(#3e449d, 0.9) 100%), url(../assets/images/stars.gif) bottom;
+        background: linear-gradient(to right, rgba(#270c53, 0.9) 0%, rgba(#3e449d, 0.9) 100%), url(../../assets/images/stars.gif) bottom;
     }
 
     &__logo {
@@ -277,7 +277,7 @@ body {
     &__intro {
         padding: 30px 0;
         text-align: center;
-        background: linear-gradient(to top left, rgba($base-color, 0.9) 0%, rgba($base-color, 0.9) 100%), url(../assets/images/stars.gif);
+        background: linear-gradient(to top left, rgba($base-color, 0.9) 0%, rgba($base-color, 0.9) 100%), url(../../assets/images/stars.gif);
 
         @media screen and (max-width: $screen-sm-max) {
             padding: 6px 0;
