@@ -16,10 +16,10 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
         const proj = edge.node.fileAbsolutePath.substring(rootPath.length).split('/').filter((item) => !!item)[0];
         const docPath = normalizeDocPath(edge.node.fileAbsolutePath.substring(rootPath.length));
         if (docPath == 'argo/readme') {
-            createPage({ path: 'docs', component: componentPath, context: { docHtml: edge.node.html, docPath, proj } });
+            createPage({ path: 'docs', component: componentPath, context: { docHtml: edge.node.html, docPath: docPath + '.html', proj } });
         }
         createPage({
-            path:  path.join('docs', docPath),
+            path:  path.join('docs', docPath + '.html'),
             component: componentPath,
             context: { docHtml: edge.node.html, docPath, proj },
         });

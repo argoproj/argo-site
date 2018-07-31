@@ -4,22 +4,22 @@ import * as React from 'react';
 const BOXES = [{
     title: 'Workflow Engine',
     description: 'Argo is an open source container-native workflow engine for getting work done on Kubernetes.',
-    link: '/docs/argo/readme',
+    link: '/docs/argo/readme.html',
 },
 {
     title: 'Continuous Delivery',
     description: 'Declarative continuous delivery for Kubernetes.',
-    link: '/docs/argo-cd/readme',
+    link: '/docs/argo-cd/readme.html',
 },
 {
     title: 'Argo Events',
     description: 'Event-based dependency manager for Kubernetes.',
-    link: '/docs/argo-events/readme',
+    link: '/docs/argo-events/readme.html',
 },
 {
     title: 'Continuous Integration',
     description: 'Continuous integration and deployment system powered by Argo workflow engine.',
-    link: '/docs/argo-ci/readme',
+    link: '/docs/argo-ci/readme.html',
 }];
 
 const argoWheelImg = require('../../assets/images/argo-wheel.png');

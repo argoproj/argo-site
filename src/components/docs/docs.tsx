@@ -7,7 +7,7 @@ import { DocInfo, services } from '../../services';
 require('./docs.scss');
 
 function docLink(docPath: string) {
-    return `/docs/${docPath}`;
+    return `/docs/${docPath}.html`;
 }
 
 export const Docs = (props: { docHtml: string; docPath: string; proj: string; }) => {

@@ -14,7 +14,7 @@ module.exports = {
                     resolve: 'gatsby-remark-link-rewrite',
                     options: {
                       pattern: /^(.*)[.]md$/,
-                      replace: '$1',
+                      replace: '$1.html',
                     },
                 },'gatsby-remark-copy-images'],
             },
