@@ -1,8 +1,13 @@
 module.exports = {
+    siteMetadata: {
+        siteUrl: 'https://argoproj.github.io',
+    },
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-typescript',
         'gatsby-plugin-sass', {
+            resolve: 'gatsby-plugin-sitemap',
+        }, {
             resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [{

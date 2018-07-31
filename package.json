@@ -15,6 +15,7 @@
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-typescript": "^1.4.10",
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-remark-images": "^1.5.67",
