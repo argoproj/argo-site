@@ -51,7 +51,18 @@ export class DocsService {
     }
 
     public byPath(docPath: string): DocInfo {
-        return this.index[normalizeDocPath(docPath)];
+        docPath = normalizeDocPath(docPath);
+        let doc = this.index[docPath];
+        if (!doc) {
+            doc = {
+                parent: null,
+                children: [],
+                path: docPath,
+                proj: docPath.split('/')[0],
+                title: path.basename(docPath),
+            };
+        }
+        return doc;
     }
 
     public roots(proj: string) {

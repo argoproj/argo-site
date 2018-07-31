@@ -3,12 +3,13 @@ module.exports = {
     docs: {
         'argo': [{
             title: 'Overview', path: 'README.md',
+            children: [{
+                title: 'How to configure your artifact repository', path: 'ARTIFACT_REPO.md',
+            }]
         }, {
             title: 'Getting started', path: 'demo.md',
         }, {
             title: 'Examples', path: 'examples/README.md',
-        }, {
-            title: 'How to configure your artifact repository', path: 'ARTIFACT_REPO.md',
         }],
         'argo-cd': [{
             title: 'Overview', path: 'README.md',
@@ -33,7 +34,28 @@ module.exports = {
             }, {
                 title: 'RBAC', path: 'docs/rbac.md',
             }],
-        }]
+        }],
+        'argo-events': [{
+            title: 'Overview', path: 'README.md',
+        }, {
+            title: 'Documentation', path: 'docs/index.md',
+            children: [{
+                title: 'Quickstart', path: 'docs/quickstart.md'
+            }, {
+                title: 'Signal Guide', path: 'docs/signal-guide.md'
+            }, {
+                title: 'Trigger Guide', path: 'docs/trigger-guide.md'
+            }]
+        }, {
+            title: 'Contributing', path: 'CONTRIBUTING.md'
+        }, {
+            title: 'Roadmap', path: 'ROADMAP.md'
+        }],
+        'argo-ci': [{
+            title: 'Overview', path: 'README.md',
+        }, {
+            title: 'Roadmap', path: 'ROADMAP.md'
+        }],
     },
     normalizeDocPath(docPath) {
         if (docPath.indexOf('/') === 0) {

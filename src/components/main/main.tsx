@@ -34,7 +34,6 @@ export const Main = (props: React.Props<any>) => (
                 </div>
                 <div className='main__header-nav'>
                     <Link to='/docs'>Docs</Link>
-                    <a href='community'>Community</a>
                     <a href='https://blog.argoproj.io/' target='_blank'>Blog</a>
                     <a href='http://github.com/argoproj/' target='_blank'>
                         <i className='fa fa-github' /> <span className='github-text'>GitHub Project</span>
@@ -47,7 +46,7 @@ export const Main = (props: React.Props<any>) => (
         </div>
         <div className='main__footer'>
             <div className='main__container'>
-                <a className='main__footer-logo' href='https://applatix.com/' target='_blank'>
+                <a className='main__footer-logo' href='https://www.intuit.com' target='_blank'>
                     <img src={logoSvg} alt=''/>
                 </a>
             </div>

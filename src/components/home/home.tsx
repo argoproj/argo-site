@@ -4,26 +4,26 @@ import * as React from 'react';
 const BOXES = [{
     title: 'Workflow Engine',
     description: 'Argo is an open source container-native workflow engine for getting work done on Kubernetes. ',
-    link: '/docs/argo/demo',
+    link: '/docs/argo/readme',
 },
 {
     title: 'Continuous Delivery',
     description: 'Declarative continuous delivery for Kubernetes.',
-    link: '/docs/argo/demo',
+    link: '/docs/argo-cd/readme',
 },
 {
     title: 'Argo Events',
     description: 'Event-based dependency manager for Kubernetes.',
-    link: '/docs/argo/demo',
+    link: '/docs/argo-events/readme',
 },
 {
     title: 'Continuous Integration',
     description: 'Continuous integration and deployment system powered by Argo workflow engine.',
-    link: '/docs/argo/demo',
+    link: '/docs/argo-ci/readme',
 }];
 
 const argoWheelImg = require('../../assets/images/argo-wheel.png');
-const logos = ['appD.png', 'Heron.png', 'Rockset.png', 'Shibumi.png', 'Hyperpilot.png', 'Pulsar.png', 'Plus3.png', 'ApacheBookkeeper.png'].map(
+const logos = ['intuit.png', 'blackrock.png', 'google.png', 'nvidia.png', 'datadog.png', 'cyrus.png', 'gladly.png', 'corefilling.png'].map(
     (name) => ({ name, src: require(`../../assets/images/logos/${name}`)}));
 
 require('./home.scss');
