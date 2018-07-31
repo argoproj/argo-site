@@ -3,7 +3,7 @@ import * as React from 'react';
 
 const BOXES = [{
     title: 'Workflow Engine',
-    description: 'Argo is an open source container-native workflow engine for getting work done on Kubernetes. ',
+    description: 'Argo is an open source container-native workflow engine for getting work done on Kubernetes.',
     link: '/docs/argo/readme',
 },
 {
