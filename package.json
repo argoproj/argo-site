@@ -24,7 +24,8 @@
     "gatsby-transformer-remark": "^1.7.44",
     "gh-pages": "^1.2.0",
     "raw-loader": "^0.5.1",
-    "react": "^16.4.1"
+    "react": "^16.4.1",
+    "three": "^0.95.0"
   },
   "main": "n/a",
   "scripts": {

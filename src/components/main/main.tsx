@@ -1,7 +1,11 @@
+import * as classNames from 'classnames';
 import Link from 'gatsby-link';
 import { push } from 'gatsby-link';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
+
+import { services } from '../../services';
+import { PROJECTS  } from '../projects';
 
 require('./main.scss');
 
@@ -21,35 +25,57 @@ const logoTextSvg = (
 );
 // tslint:enable:max-line-length
 
-export const Main = (props: React.Props<any>) => (
-    <div className='main'>
-        <Helmet title='Argo'>
-            <link rel='icon' type='image/png' href='/favicon/favicon-32x32.png' sizes='32x32'/>
-            <link rel='icon' type='image/png' href='/favicon/favicon-16x16.png' sizes='16x16'/>
-        </Helmet>
-        <div className='main__header'>
-            <div className='main__container'>
-                <div className='main__logo' onClick={() => push('/')}>
-                    <div className='main__logo-text'>{logoTextSvg}</div>
+export class Main extends React.Component<{}, {showNav: boolean}> {
+    constructor(props: {})  {
+        super(props);
+        this.state = { showNav: false };
+    }
+
+    public render() {
+        return (
+            <div className='main'>
+                <Helmet title='Argo'>
+                    <link rel='icon' type='image/png' href='/favicon/favicon-32x32.png' sizes='32x32'/>
+                    <link rel='icon' type='image/png' href='/favicon/favicon-16x16.png' sizes='16x16'/>
+                </Helmet>
+                <div className='main__header'>
+                    <div className='main__container'>
+                        <div className='main__logo' onClick={() => push('/')}>
+                            <div className='main__logo-text'>{logoTextSvg}</div>
+                        </div>
+                        <div className={classNames('main__header-nav', {show: this.state.showNav})}>
+                            {Object.keys(PROJECTS).map((proj) => ({proj, info: PROJECTS[proj]})).map(({proj, info}) => (
+                                [
+                                    <Link key={`main_${proj}`} to={`/${proj}`}>{info.name}</Link>,
+                                    <div key={`docs_${proj}`} className='main__header-subnav'>
+                                        {services.docs.roots(proj).map((doc) => <Link key={`doc_${doc.path}_${proj}`} to={`/docs/${doc.path}.html`}>{doc.title}</Link>)}
+                                    </div>,
+                                ]
+                            ))}
+                            <a href='https://blog.argoproj.io/' target='_blank'>Blog</a>
+                            <a href='http://github.com/argoproj/' target='_blank'>
+                                <i className='fa fa-github' /> <span className='github-text'>GitHub Project</span>
+                            </a>
+                            <div className='main__header-nav-close' onClick={() => this.setState({ showNav: false })}>
+                                <i className='fa fa-times'/>
+                            </div>
+                        </div>
+                        <div className='main__header-nav-toggle' onClick={() => this.setState({ showNav: !this.state.showNav })}>
+                            <i className='fa fa-bars'/>
+                        </div>
+                    </div>
                 </div>
-                <div className='main__header-nav'>
-                    <Link to='/docs'>Docs</Link>
-                    <a href='https://blog.argoproj.io/' target='_blank'>Blog</a>
-                    <a href='http://github.com/argoproj/' target='_blank'>
-                        <i className='fa fa-github' /> <span className='github-text'>GitHub Project</span>
-                    </a>
+                <div className='main__content'>
+                    {this.props.children}
+                </div>
+                <div className='main__footer'>
+                    <div className='main__container'>
+                        <a className='main__footer-logo' href='https://www.intuit.com' target='_blank'>
+                            <img src={logoSvg} alt=''/>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className='main__content'>
-            {props.children}
-        </div>
-        <div className='main__footer'>
-            <div className='main__container'>
-                <a className='main__footer-logo' href='https://www.intuit.com' target='_blank'>
-                    <img src={logoSvg} alt=''/>
-                </a>
-            </div>
-        </div>
-    </div>
-);
+        );
+    }
+}

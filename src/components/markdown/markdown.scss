@@ -1,0 +1,135 @@
+@import '../../styles/config';
+
+.markdown {
+    overflow: auto;
+    position: relative;
+    margin: 0 0 40px;
+    padding: 26px 30px;
+    color: #676c76;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px rgba(#000, .1);
+    border-left: 1px solid #f3f1fa;
+
+    h1 {
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-size: 2em;
+        color: $argo-orange;
+        border: 0;
+    }
+
+    h2 {
+        margin: 30px 0 20px;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: inherit;
+        border: 0;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        border: 0;
+    }
+
+    h4,
+    h5 {
+        font-size: 1.2em;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    li > p {
+        margin: 0;
+    }
+
+    a {
+        color: #4884cd;
+    }
+
+    li {
+        line-height: 2.8;
+    }
+
+    code {
+        padding: .3rem .3rem .4rem;
+        font-weight: 600;
+        color: #725db1;
+        background-color: #f8f6fd;
+        border: 0;
+    }
+
+    pre {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        color: #dee6eb;
+        background-color: #363c4a;
+        border-radius: 6px;
+
+        code {
+            padding: 0;
+            color: #dee6eb;
+            background-color: transparent;
+        }
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 2rem;
+        border: 0 !important;
+        border-collapse: separate;
+
+        th {
+            padding: 10px 20px;
+            font-weight: 500;
+            color: #8f899d;
+            text-align: left;
+        }
+
+        tbody {
+            tr {
+                &:first-child td {
+                    border-top: 1px solid #ccd6dd;
+
+                    &:first-child {
+                        border-top-left-radius: 6px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 6px;
+                    }
+                }
+
+                &:last-child td {
+                    border-bottom: 1px solid #ccd6dd;
+
+                    &:first-child {
+                        border-bottom-left-radius: 6px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 6px;
+                    }
+                }
+
+                td:first-child {
+                    border-left: 1px solid #ccd6dd;
+                }
+
+                td:last-child {
+                    border-right: 1px solid #ccd6dd;
+                }
+
+                &:nth-child(even) {
+                    background-color: #f9f8fb;
+                }
+            }
+        }
+
+        td {
+            padding: 20px;
+        }
+    }
+}
