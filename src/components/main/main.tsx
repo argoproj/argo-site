@@ -25,10 +25,24 @@ const logoTextSvg = (
 );
 // tslint:enable:max-line-length
 
-export class Main extends React.Component<{}, {showNav: boolean}> {
+export class Main extends React.Component<{transparentHeader?: boolean}, {showNav: boolean, scrolled: boolean}> {
+
+    private onScrollHandler: () => any;
+
     constructor(props: {})  {
         super(props);
-        this.state = { showNav: false };
+        this.state = { showNav: false, scrolled: false };
+        this.onScrollHandler = this.onScroll.bind(this);
+    }
+
+    public componentDidMount() {
+        if (this.props.transparentHeader) {
+            window.addEventListener('scroll', this.onScrollHandler);
+        }
+    }
+
+    public componentWillUnmount() {
+        window.removeEventListener('scroll', this.onScrollHandler);
     }
 
     public render() {
@@ -38,7 +52,7 @@ export class Main extends React.Component<{}, {showNav: boolean}> {
                     <link rel='icon' type='image/png' href='/favicon/favicon-32x32.png' sizes='32x32'/>
                     <link rel='icon' type='image/png' href='/favicon/favicon-16x16.png' sizes='16x16'/>
                 </Helmet>
-                <div className='main__header'>
+                <div className={classNames('main__header', {solid: !this.props.transparentHeader || this.state.scrolled})}>
                     <div className='main__container'>
                         <div className='main__logo' onClick={() => push('/')}>
                             <div className='main__logo-text'>{logoTextSvg}</div>
@@ -77,5 +91,9 @@ export class Main extends React.Component<{}, {showNav: boolean}> {
                 </div>
             </div>
         );
+    }
+
+    private onScroll() {
+        this.setState({ scrolled: window.scrollY > 50 });
     }
 }

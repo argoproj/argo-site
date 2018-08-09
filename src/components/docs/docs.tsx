@@ -28,13 +28,6 @@ export const Docs = (props: { docHtml: string; docPath: string; proj: string; })
     return (
         <div className='docs'>
             <div className='docs__top'>
-                <div className='docs__left-nav main__nav main__nav--hide-sm'>
-                    ${services.docs.projs().map((proj) => (
-                        <Link className={classNames({active: props.proj === proj})} key={proj} to={docLink(services.docs.defaultDoc(proj))}>
-                            {proj}
-                        </Link>
-                    ))}
-                </div>
                 <div className='main__nav main__nav--hide-sm'>
                     <div className='main__container'>
                         {roots.map((item) => (

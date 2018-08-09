@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Home, Main } from '../components';
 
 export default () => (
-    <Main>
+    <Main transparentHeader={true}>
         <Helmet>
             <title>Get stuff done with Kubernetes | Argo</title>
             <meta name='description' content='Kubernetes native workflows, deployments, CI, events' />

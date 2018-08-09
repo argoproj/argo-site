@@ -36,6 +36,46 @@ body {
     font: 400 16px/1.3 'Work Sans', sans-serif;
     color: #fff;
 
+    .btn {
+        display: inline-block;
+        margin: 0 4px;
+        padding: 10px 20px;
+        min-width: 180px;
+        font-family: inherit;
+        text-transform: uppercase;
+        text-align: center;
+    
+        &--filled,
+        &--filled:hover {
+            font-weight: 500;
+            color: #fff !important;
+            background-color: $argo-color-cyan;
+        }
+    
+        &--border,
+        &--border:hover {
+            color: $argo-color-cyan !important;
+            border: 1px solid rgba($argo-color-cyan, .4);
+        }
+    
+        i {
+            vertical-align: middle;
+            margin-right: 4px;
+            font-size: 1.4em;
+        }
+    }
+
+    .btns {
+        margin-top: 30px;
+        margin-left: -4px;
+
+        .btn {
+            @media screen and (max-width: $screen-sm-max) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     a {
         color: #4884cd;
 
@@ -60,6 +100,9 @@ body {
         height: $header-height;
         line-height: $header-height;
         background: linear-gradient(to right, rgba(#270c53, 0.9) 0%, rgba(#3e449d, 0.9) 100%), url(../../assets/images/stars.gif) bottom;
+    }
+    &__header.solid {
+        background: rgb(39,12,83);
     }
 
     &__logo {

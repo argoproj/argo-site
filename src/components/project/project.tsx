@@ -8,8 +8,6 @@ import { PROJECTS } from '../projects';
 
 require('./project.scss');
 
-const argoWheelImg = require('../../assets/images/argo-wheel.png');
-
 export const Project = (props: { proj: string, markdownHtml: string, animationType: AnimationType } & React.Props<any> ) => {
     const markdownHtml = props.markdownHtml.replace(/<a href="((?!http)[^"]+)"/g, (_, group) => {
         return `<a href="docs/${props.proj}/${group}"`;
@@ -25,24 +23,18 @@ export const Project = (props: { proj: string, markdownHtml: string, animationTy
                 <div className='main__container'>
                     <div className='row'>
                         <div className='columns small-8 project__headline-container'>
-                            <div className='project__animation'>
-                                <Animations type={props.animationType} width='800px' height='500px'/>
-                            </div>
                             <div className='project__headline'>
                                 <h1>{project.title}</h1>
                                 <h2>{project.description}</h2>
+                                <Link className='btn btn--filled' to={`/docs/${props.proj}/readme.html`}>Docs</Link>
                             </div>
+                            <Animations type={props.animationType} width='800px' height='500px'/>
                         </div>
-                        <div className='columns small-4'>
-                            <img src={argoWheelImg} alt='Argo'/>
-                        </div>
+                        <div className='columns small-4'/>
                     </div>
                 </div>
             </div>
             <div className='main__container'>
-                <div style={{ textAlign: 'right' }}>
-                    <Link className='project__doc-link' to={`/docs/${props.proj}/readme.html`}>Docs</Link>
-                </div>
                 <Markdown markdownHtml={markdownHtml}/>
             </div>
         </div>

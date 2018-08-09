@@ -13,7 +13,7 @@ container.appendChild(renderer.domElement);
 
 var boxSize = 0.2;
 var geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
-var materialGreen = new THREE.MeshBasicMaterial({transparent: true,  color: 0xff0000,  opacity: 0.4,  side: THREE.DoubleSide});
+var materialGreen = new THREE.MeshBasicMaterial({transparent: true,  color: 0xffffff,  opacity: 0.4,  side: THREE.DoubleSide});
 
 var pitchSegments = 60;
 var elevationSegments = pitchSegments/2;

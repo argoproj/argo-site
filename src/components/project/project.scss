@@ -37,7 +37,12 @@
     &__headline {
         position: absolute;
         left: 0;
-        top: 7em;
+        top: 2em;
+        z-index: 1;
+
+        @media screen and (min-width: $screen-md-min) {
+            top: 7em;
+        }
     }
 
     &__header {
@@ -45,7 +50,10 @@
         .animations {
             @media screen and (max-width: $screen-md-min) {
                 margin-top: -150px !important;
-                margin-left: -250px !important;
+                margin-left: -150px !important;
+            }
+            .solar-system {
+                margin-top: -100px !important;
             }
         }
 
@@ -54,7 +62,7 @@
         margin-bottom: 10px;
 
         @media screen and (min-width: $screen-md-min) {
-            height: 550px;
+            height: 350px;
         }
 
         &::before {
@@ -67,7 +75,7 @@
             height: 400px;
 
             @media screen and (min-width: $screen-md-min) {
-                height: 700px;
+                height: 500px;
             }
         }
 
