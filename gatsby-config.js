@@ -18,7 +18,7 @@ module.exports = {
                 }, {
                     resolve: 'gatsby-remark-link-rewrite',
                     options: {
-                      pattern: /^(.*)[.]md$/,
+                      pattern: /^(?!.*http[s]?:)(.*)[.]md$/,
                       replace: '$1.html',
                     },
                 },'gatsby-remark-copy-images'],
