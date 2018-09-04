@@ -14,5 +14,5 @@ To push changes to http://argoproj.io/ make sure you have write access to `https
  repo and run:
 
 ```
-yarn deploy
+yarn build && yarn deploy
 ```
