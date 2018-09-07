@@ -18,6 +18,7 @@ export const Project = (props: { proj: string, markdownHtml: string, animationTy
             <Helmet>
                 <title>{project.title} | Argo</title>
                 <meta name='description' content={project.description} />
+                <meta name='keywords' content={project.keywords.join(',')}/>
             </Helmet>
             <div className='project__header'>
                 <div className='main__container'>
