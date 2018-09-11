@@ -41,6 +41,8 @@ module.exports = {
                 }, {
                     title: 'RBAC', path: 'docs/rbac.md',
                 }],
+            }, {
+                title: 'Changelog', path: 'changelog.md',
             }]
         },
         'argo-events': {
