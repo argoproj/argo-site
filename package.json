@@ -13,6 +13,7 @@
     "foundation-sites": "^6.5.0-rc.2",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sitemap": "^1.2.25",
@@ -29,7 +30,7 @@
   },
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "NODE_ENV=production GA_TRACKING_ID=UA-105170809-1 gatsby build",
     "deploy": "gh-pages -b master -d public -r git@github.com:argoproj/argoproj.github.io.git",
     "start": "gatsby develop",
     "lint": "tslint --project ./tsconfig.json"

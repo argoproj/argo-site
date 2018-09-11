@@ -11,6 +11,11 @@ module.exports = {
             resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [{
+                    resolve: `gatsby-plugin-google-analytics`,
+                    options: {
+                        trackingId: process.env.GA_TRACKING_ID,
+                    },
+                }, {
                     resolve: 'gatsby-remark-images',
                     options: {
                         maxWidth: 590,
