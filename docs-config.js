@@ -21,6 +21,8 @@ module.exports = {
             docs: [{
                 title: 'Overview', path: 'README.md',
             }, {
+                title: 'Getting started', path: 'docs/getting_started.md',
+            }, {
                 title: 'Features', path: 'docs/README.md',
                 children: [{
                     title: 'Architecture', path: 'docs/architecture.md',
