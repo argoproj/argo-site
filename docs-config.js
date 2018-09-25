@@ -45,6 +45,8 @@ module.exports = {
                 }],
             }, {
                 title: 'Changelog', path: 'changelog.md',
+            }, {
+                title: 'FAQ', path: 'docs/faq.md',
             }]
         },
         'argo-events': {
