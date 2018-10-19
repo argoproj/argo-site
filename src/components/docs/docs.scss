@@ -3,6 +3,66 @@
 .docs {
     position: relative;
 
+    &__search-box {
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+
+        @media screen and (max-width: $screen-sm-max) {
+            padding-left: 50px;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    &__search-input {
+        padding: 8px 40px 8px 12px;
+        font-size: .9em;
+        color: $argo-color-gray-6;
+        border-radius: 20px;
+        border: 1px solid #d7dee4;
+    }
+
+    &__search-button {
+        position: absolute;
+        top: 9px;
+        right: 16px;
+        color: #818181;
+    }
+
+    &__search-result {
+        padding-bottom: 20px;
+    }
+
+    &__search-result {
+        padding: 20px 0;
+        line-height: 1.3;
+        font-size: .86em;
+        color: $argo-color-gray-8;
+        border-bottom: 1px solid $argo-color-gray-3;
+
+        a {
+            font-size: 1.3em;
+        }
+    }
+
+    &__search-summary {
+        width: 100%;
+        max-height: 48px;
+        margin-bottom: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $argo-color-gray-6;
+    }
+
+    &__highlight {
+        font-weight: bold;
+        color: $argo-color-gray-8;
+    }
+
     &__left-nav {
         float: left;
     }

@@ -9,6 +9,7 @@
     "@types/react-helmet": "^5.0.6",
     "classnames": "^2.2.6",
     "copyfiles": "^2.0.0",
+    "elasticlunr": "^0.9.5",
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.5.0-rc.2",
     "gatsby": "^1.9.119",
@@ -24,6 +25,9 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "gh-pages": "^1.2.0",
+    "jsdom": "^12.0.0",
+    "marked": "^0.5.1",
+    "querystring": "^0.2.0",
     "raw-loader": "^0.5.1",
     "react": "^16.4.1",
     "three": "^0.95.0"
