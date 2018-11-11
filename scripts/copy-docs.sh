@@ -9,3 +9,4 @@ do
 done
 
 yarn copyfiles "../argo-ci/**/*.{md,gif,jpg,png}" .tmp/docs/argo-ci && node ./scripts/index-docs.js .tmp/docs > static/searchIndex.json
+rm -rf .tmp/docs/argo-ci/node_modules
