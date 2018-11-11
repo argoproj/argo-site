@@ -34,7 +34,7 @@
   },
   "main": "n/a",
   "scripts": {
-    "build": "NODE_ENV=production GA_TRACKING_ID=UA-105170809-1 gatsby build",
+    "build": "NODE_ENV=production GA_TRACKING_ID=UA-105170809-1 node --max_old_space_size=4096 node_modules/.bin/gatsby build",
     "deploy": "gh-pages -b master -d public -r git@github.com:argoproj/argoproj.github.io.git",
     "start": "gatsby develop",
     "lint": "tslint --project ./tsconfig.json"
