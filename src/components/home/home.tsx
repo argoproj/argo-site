@@ -4,7 +4,7 @@ import * as React from 'react';
 import { PROJECTS } from '../projects';
 
 const argoWheelImg = require('../../assets/images/argo-wheel.png');
-const logos = ['intuit.png', 'blackrock.png', 'google.png', 'nvidia.png', 'datadog.png', 'cyrus.png', 'gladly.png', 'corefilling.png', 'adoby.png', 'interline.png'].map(
+const logos = ['intuit.png', 'blackrock.png', 'google.png', 'nvidia.png', 'datadog.png', 'cyrus.png', 'gladly.png', 'corefilling.png', 'adoby.png', 'interline.png', 'pfn.png'].map(
     (name) => ({ name, src: require(`../../assets/images/logos/${name}`)}));
 
 require('./home.scss');
