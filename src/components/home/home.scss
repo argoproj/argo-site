@@ -205,8 +205,9 @@
     
         &__item {
             float: left;
+            position: relative;
             width: 25%;
-            padding: 30px 0;
+            height: 152px;
             text-align: center;
             background-color: #fff;
             border-right: 1px solid #eeeeee;
@@ -218,9 +219,12 @@
             }
     
             img {
-                width: 196px;
-                height: 91px;
+                max-height: 92;
                 max-width: 80%;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%)
             }
         }
     }    

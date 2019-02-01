@@ -4,8 +4,20 @@ import * as React from 'react';
 import { PROJECTS } from '../projects';
 
 const argoWheelImg = require('../../assets/images/argo-wheel.png');
-const logos = ['intuit.png', 'blackrock.png', 'google.png', 'nvidia.png', 'datadog.png', 'cyrus.png', 'gladly.png', 'corefilling.png', 'adoby.png', 'interline.png'].map(
-    (name) => ({ name, src: require(`../../assets/images/logos/${name}`)}));
+const communities = {
+  'intuit.png': 'https://www.intuit.com/',
+  'blackrock.png': 'https://www.blackrock.com/',
+  'google.png': 'https://www.google.com/intl/en/about/our-company/',
+  'nvidia.png': 'https://www.nvidia.com/',
+  'datadog.png': 'https://www.datadoghq.com/',
+  'cyrus.png': 'https://cyrusbio.com/',
+  'gladly.png': 'https://gladly.com/',
+  'corefilling.png': 'https://www.corefiling.com/',
+  'adoby.png': 'https://www.adobe.com/',
+  'interline.png': 'https://www.interline.io/blog/scaling-openstreetmap-data-workflows/',
+  'pfn.png': 'https://preferred-networks.jp/en/',
+};
+const logos = Object.keys(communities).map((name, index) => ({ name, src: require(`../../assets/images/logos/${name}`), href: communities[name]}));
 
 require('./home.scss');
 
@@ -41,7 +53,9 @@ export const Home = () => (
                 <div className='home__community-logos'>
                     {logos.map((item) => (
                         <div key={item.name} className='home__community-logos__item'>
-                            <img src={item.src} alt={item.name}/>
+                            <a href={item.href} target='_blank'>
+                              <img src={item.src} alt={item.name}/>
+                            </a>
                         </div>
                     ))}
                 </div>
