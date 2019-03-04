@@ -55,14 +55,20 @@ module.exports = {
             docs: [{
                 title: 'Overview', path: 'README.md',
             }, {
-                title: 'Documentation', path: 'docs/index.md',
+                title: 'Documentation', path: 'docs/gateway-guide.md',
                 children: [{
-                    title: 'Quickstart', path: 'docs/quickstart.md'
+                    title: 'Sensor', path: 'docs/sensor-guide.md'
                 }, {
-                    title: 'Signal Guide', path: 'docs/signal-guide.md'
+                    title: 'Trigger', path: 'docs/trigger-guide.md'
                 }, {
-                    title: 'Trigger Guide', path: 'docs/trigger-guide.md'
-                }]
+                    title: 'Communication between gateway and sensor', path: 'docs/communication.md'
+                }, {
+                    title: 'Controllers', path: 'docs/controllers-guide.md'
+                }, {
+                    title: 'Gateway protocol', path: 'docs/gateway-protocol.md'
+                }, {
+                    title: 'Sensor protocol', path: 'docs/sensor-protocol.md'
+                }, ]
             }, {
                 title: 'Contributing', path: 'CONTRIBUTING.md'
             }, {
