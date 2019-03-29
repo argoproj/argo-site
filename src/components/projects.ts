@@ -13,13 +13,6 @@ export const PROJECTS: {[name: string]: { name: string, title: string; keywords:
         link: '/argo-cd',
         keywords: ['gitops', 'continuous-delivery', 'continuous-deployment', 'kubernetes'],
     },
-    'argo-ci': {
-        name: 'Argo CI',
-        title: 'Continuous Integration',
-        description: 'Continuous integration and deployment system powered by Argo workflows and integrated with Git',
-        link: '/argo-ci',
-        keywords: ['kubernetes', 'continuous-integration'],
-    },
     'argo-events': {
         name: 'Argo Events',
         title: 'Events',

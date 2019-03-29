@@ -74,16 +74,7 @@ module.exports = {
             }, {
                 title: 'Roadmap', path: 'ROADMAP.md'
             }]
-        },
-        'argo-ci': {
-            title: 'Continuous integration for Kubernetes.',
-            description: 'Continuous integration and deployment system powered by Argo workflow engine.',
-            docs: [{
-                title: 'Overview', path: 'README.md',
-            }, {
-                title: 'Roadmap', path: 'ROADMAP.md'
-            }]
-        },
+        }
     },
     normalizeDocPath(docPath) {
         if (docPath.indexOf('/') === 0) {
