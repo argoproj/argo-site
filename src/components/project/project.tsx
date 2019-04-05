@@ -8,7 +8,7 @@ import { PROJECTS } from '../projects';
 
 require('./project.scss');
 
-export const Project = (props: { proj: string, markdownHtml: string, animationType: AnimationType } & React.Props<any> ) => {
+export const Project = (props: { proj: string, docsLink: string, markdownHtml: string, animationType: AnimationType } & React.Props<any> ) => {
     const markdownHtml = props.markdownHtml.replace(/<a href="((?!http)[^"]+)"/g, (_, group) => {
         return `<a href="/docs/${props.proj}/${group}"`;
     });
@@ -27,7 +27,7 @@ export const Project = (props: { proj: string, markdownHtml: string, animationTy
                             <div className='project__headline'>
                                 <h1>{project.title}</h1>
                                 <h2>{project.description}</h2>
-                                <Link className='btn btn--filled' to={`/docs/${props.proj}/readme.html`}>Docs</Link>
+                                <Link className='btn btn--filled' to={props.docsLink}>Docs</Link>
                             </div>
                             <Animations type={props.animationType} width='800px' height='500px'/>
                         </div>

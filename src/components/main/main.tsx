@@ -60,7 +60,7 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                         <div className={classNames('main__header-nav', {show: this.state.showNav})}>
                             {Object.keys(PROJECTS).map((proj) => ({proj, info: PROJECTS[proj]})).map(({proj, info}) => (
                                 [
-                                    <Link key={`main_${proj}`} to={`/${proj}`}>{info.name}</Link>,
+                                    <Link key={`main_${proj}`} to={`${info.link}`}>{info.name}</Link>,
                                     <div key={`docs_${proj}`} className='main__header-subnav'>
                                         {services.docs.roots(proj).map((doc) => <Link key={`doc_${doc.path}_${proj}`} to={`/docs/${doc.path}.html`}>{doc.title}</Link>)}
                                     </div>,

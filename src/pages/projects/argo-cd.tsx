@@ -1,11 +1,12 @@
 import * as React from 'react';
 
-import { Main, Project } from '../components';
+import { Main, Project } from '../../components';
 
 export default ({ data }: {data: any}) => {
     return (
         <Main>
-            <Project proj='argo-cd' animationType='3d-particles' markdownHtml={data.allMarkdownRemark.edges[0].node.html}/>
+            <Project proj='argo-cd' animationType='3d-particles' markdownHtml={data.allMarkdownRemark.edges[0].node.html}
+              docsLink='../argo-cd/'/>
         </Main>
     );
 };

@@ -19,34 +19,7 @@ module.exports = {
             title: 'Declarative continuous delivery for Kubernetes.',
             description: 'Declarative continuous delivery for Kubernetes.',
             docs: [{
-                title: 'Overview', path: 'README.md',
-            }, {
-                title: 'Getting started', path: 'docs/getting_started.md',
-            }, {
-                title: 'Features', path: 'docs/README.md',
-                children: [{
-                    title: 'Architecture', path: 'docs/architecture.md',
-                }, {
-                    title: 'Tracking Strategies', path: 'docs/tracking_strategies.md',
-                }, {
-                    title: 'Application Sources', path: 'docs/application_sources.md',
-                }, {
-                    title: 'Application Parameters', path: 'docs/parameters.md',
-                }, {
-                    title: 'Resource Health', path: 'docs/health.md',
-                }, {
-                    title: 'Resource Hooks', path: 'docs/resource_hooks.md',
-                }, {
-                    title: 'Single Sign On', path: 'docs/sso.md',
-                }, {
-                    title: 'Webhooks', path: 'docs/webhook.md',
-                }, {
-                    title: 'RBAC', path: 'docs/rbac.md',
-                }],
-            }, {
-                title: 'Changelog', path: 'changelog.md',
-            }, {
-                title: 'FAQ', path: 'docs/faq.md',
+                title: 'Overview', path: 'README.md'
             }]
         },
         'argo-events': {

@@ -5,7 +5,8 @@ import { Main, Project } from '../components';
 export default ({ data }: {data: any}) => {
     return (
         <Main>
-            <Project proj='argo-events' animationType='solar-system' markdownHtml={data.allMarkdownRemark.edges[0].node.html}/>
+            <Project proj='argo-events' animationType='solar-system' markdownHtml={data.allMarkdownRemark.edges[0].node.html}
+              docsLink='/docs/argo-events/readme.html'/>
         </Main>
     );
 };
