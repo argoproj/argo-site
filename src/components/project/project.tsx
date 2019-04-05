@@ -27,7 +27,7 @@ export const Project = (props: { proj: string, docsLink: string, markdownHtml: s
                             <div className='project__headline'>
                                 <h1>{project.title}</h1>
                                 <h2>{project.description}</h2>
-                                <Link className='btn btn--filled' to={props.docsLink}>Docs</Link>
+                                <a className='btn btn--filled' href={props.docsLink}>Docs</a>
                             </div>
                             <Animations type={props.animationType} width='800px' height='500px'/>
                         </div>
