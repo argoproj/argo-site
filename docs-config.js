@@ -37,11 +37,7 @@ module.exports = {
                     title: 'Communication between gateway and sensor', path: 'docs/communication.md'
                 }, {
                     title: 'Controllers', path: 'docs/controllers-guide.md'
-                }, {
-                    title: 'Gateway protocol', path: 'docs/gateway-protocol.md'
-                }, {
-                    title: 'Sensor protocol', path: 'docs/sensor-protocol.md'
-                }, ]
+                }]
             }, {
                 title: 'Contributing', path: 'CONTRIBUTING.md'
             }, {
