@@ -16,7 +16,7 @@ Application deployment and lifecycle management should be automated, auditable, 
 <h2 id="documentation">Documentation</h2>
 <p>To learn more about Argo CD <a href="hhttps://github.com/argoproj/argo-cd/">go to the complete documentation</a>.</p>
 '
-              docsLink='https://github.com/argoproj/argo-cd/'/>
+              docsLink='https://argoproj.github.io/argo-cd/'/>
         </Main>
     );
 };
