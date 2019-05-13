@@ -14,7 +14,7 @@ export default ({ data }: {data: any}) => {
 <p>Application definitions, configurations, and environments should be declarative and version controlled.
 Application deployment and lifecycle management should be automated, auditable, and easy to understand.</p>
 <h2 id="documentation">Documentation</h2>
-<p>To learn more about Argo CD <a href="https://github.com/argoproj/argo-cd/">go to the complete documentation</a>.</p>
+<p>To learn more about Argo CD <a href="https://argoproj.github.io/argo-cd/">go to the complete documentation</a>.</p>
 '
               docsLink='https://argoproj.github.io/argo-cd/'/>
         </Main>
