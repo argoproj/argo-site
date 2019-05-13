@@ -17,7 +17,7 @@ export const PROJECTS: {[name: string]: { name: string, title: string; keywords:
         name: 'Argo Events',
         title: 'Events',
         description: 'Event based dependency manager for Kubernetes',
-        link: '/argo-events',
+        link: '/projects/argo-events',
         keywords: ['kubernetes', 'serverless', 'events'],
     },
 };

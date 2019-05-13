@@ -8,8 +8,8 @@ import { PROJECTS } from '../projects';
 
 require('./project.scss');
 
-export const Project = (props: { proj: string, docsLink: string, markdownHtml: string, animationType: AnimationType } & React.Props<any> ) => {
-    const markdownHtml = props.markdownHtml.replace(/<a href="((?!http)[^"]+)"/g, (_, group) => {
+export const Project = (props: { proj: string, docsLink: string, markdownHtml: string, animationType: AnimationType, noReplace?: boolean } & React.Props<any> ) => {
+    const markdownHtml = props.noReplace ? props.markdownHtml : props.markdownHtml.replace(/<a href="((?!http)[^"]+)"/g, (_, group) => {
         return `<a href="/docs/${props.proj}/${group}"`;
     });
     const project = PROJECTS[props.proj];
