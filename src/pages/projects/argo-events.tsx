@@ -5,7 +5,7 @@ import { Main, Project } from '../../components';
 export default ({ data }: {data: any}) => {
     return (
         <Main>
-            <Project proj='argo-events' noReplace={true} animationType='3d-particles' markdownHtml='
+            <Project proj='argo-events' noReplace={true} animationType='solar-system' markdownHtml='
 <h1>Argo Events - The Event-Based Dependency Manager for Kubernetes</h1>
 <p align="center">
   <img src="https://raw.githubusercontent.com/argoproj/argo-events/master/docs/assets/logo.png" alt="Logo">
