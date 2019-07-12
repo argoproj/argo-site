@@ -16,6 +16,7 @@ const communities = {
   'adoby.png': 'https://www.adobe.com/',
   'interline.png': 'https://www.interline.io/blog/scaling-openstreetmap-data-workflows/',
   'pfn.png': 'https://preferred-networks.jp/en/',
+  'tesla.png': 'https://tesla.com/',
 };
 const logos = Object.keys(communities).map((name, index) => ({ name, src: require(`../../assets/images/logos/${name}`), href: communities[name]}));
 
