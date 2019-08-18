@@ -19,6 +19,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-typescript": "^1.4.10",
+    "gatsby-remark-autolink-headers": "1.4.9",
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-remark-link-rewrite": "^0.2.1",

@@ -26,7 +26,8 @@ module.exports = {
                       pattern: /^(?!.*http[s]?:)(.*)[.]md$/,
                       replace: '$1.html',
                     },
-                },'gatsby-remark-copy-images'],
+                },'gatsby-remark-copy-images',
+                `gatsby-remark-autolink-headers`],
             },
         },
     ].concat({
