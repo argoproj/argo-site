@@ -10,7 +10,7 @@ module.exports = {
                     title: 'How to configure your artifact repository', path: 'ARTIFACT_REPO.md',
                 }]
             }, {
-                title: 'Getting started', path: 'demo.md',
+                title: 'Getting started', path: 'docs/getting-started.md',
             }, {
                 title: 'Examples', path: 'examples/README.md',
             }]
