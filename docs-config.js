@@ -7,7 +7,7 @@ module.exports = {
             docs: [{
                 title: 'Overview', path: 'README.md',
                 children: [{
-                    title: 'How to configure your artifact repository', path: 'ARTIFACT_REPO.md',
+                    title: 'How to configure your artifact repository', path: 'docs/configure-artifact-repository.md',
                 }]
             }, {
                 title: 'Getting started', path: 'docs/getting-started.md',
