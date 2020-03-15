@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-go-dep-${{ hashFiles('**/yarn.lock') }}
+      - name: dependencies
+        run: yarn install
+      - name: build
+        run: |
+          yarn prepare
+          yarn build
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+          EXTERNAL_REPOSITORY: argoproj/argoproj.github.io
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: ./public
