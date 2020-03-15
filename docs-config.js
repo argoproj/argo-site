@@ -10,7 +10,7 @@ module.exports = {
                     title: 'How to configure your artifact repository', path: 'docs/configure-artifact-repository.md',
                 }]
             }, {
-                title: 'Getting started', path: 'docs/getting-started.md',
+                title: 'Getting started', path: 'getting-started.md',
             }, {
                 title: 'Examples', path: 'examples/README.md',
             }]
@@ -18,31 +18,12 @@ module.exports = {
         'argo-cd': {
             title: 'Declarative continuous delivery for Kubernetes.',
             description: 'Declarative continuous delivery for Kubernetes.',
-            docs: [{
-                title: 'Overview', path: 'README.md'
-            }]
+            docs: []
         },
         'argo-events': {
             title: 'Event-based dependency manager for Kubernetes.',
             description: 'Argo Events is an open source event-based dependency manager for Kubernetes.',
-            docs: [{
-                title: 'Overview', path: 'README.md',
-            }, {
-                title: 'Documentation', path: 'docs/gateway-guide.md',
-                children: [{
-                    title: 'Sensor', path: 'docs/sensor-guide.md'
-                }, {
-                    title: 'Trigger', path: 'docs/trigger-guide.md'
-                }, {
-                    title: 'Communication between gateway and sensor', path: 'docs/communication.md'
-                }, {
-                    title: 'Controllers', path: 'docs/controllers-guide.md'
-                }]
-            }, {
-                title: 'Contributing', path: 'CONTRIBUTING.md'
-            }, {
-                title: 'Roadmap', path: 'ROADMAP.md'
-            }]
+            docs: []
         }
     },
     normalizeDocPath(docPath) {

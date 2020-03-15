@@ -3,7 +3,7 @@ export const PROJECTS: {[name: string]: { name: string, title: string; keywords:
         name: 'Argo Workflows' ,
         title: 'Workflows & Pipelines',
         description: 'Container native workflow engine for Kubernetes supporting both DAG and step based workflows.',
-        link: '/argo',
+        link: '/projects/argo',
         keywords: ['workflow engine', 'pipeline', 'kubernetes', 'ml', 'ai'],
     },
     'argo-cd': {

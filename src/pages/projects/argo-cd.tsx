@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Main, Project } from '../../components';
 
-export default ({ data }: {data: any}) => {
+export default () => {
     return (
         <Main>
             <Project noReplace={true} proj='argo-cd' animationType='3d-particles' markdownHtml='

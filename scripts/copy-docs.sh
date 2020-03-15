@@ -1,9 +1,11 @@
 #!/usr/bin/env bash 
 
-rm -rf .tmp/docs
-projs=( argo argo-cd argo-events )
+mkdir -p /tmp/argo-site
+[ ! -d  /tmp/argo-site/argo ] && git clone https://github.com/argoproj/argo.git /tmp/argo-site/argo
+(cd /tmp/argo-site/argo && git pull)
 
-for proj in "${projs[@]}"
-do
-   yarn copyfiles -u 5 "../go/src/github.com/argoproj/$proj/**/*.{md,gif,jpg,png}" .tmp/docs && rm -rf ".tmp/docs/$proj/vendor"
-done
+rm -rf .tmp/docs
+mkdir -p .tmp/docs/argo
+cp -r /tmp/argo-site/argo/docs/* .tmp/docs/argo
+cp -r /tmp/argo-site/argo/examples .tmp/docs/argo/
+node ./scripts/index-docs.js .tmp/docs/argo > static/searchIndex.json

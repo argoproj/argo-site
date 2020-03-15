@@ -10,7 +10,7 @@ import { DocsFinder } from './docs-finder';
 require('./docs.scss');
 
 function docLink(docPath: string) {
-    return `/docs/${docPath}.html`;
+    return `/docs/argo/${docPath}.html`;
 }
 
 function getSearchSummary(searchText: string, docText: string) {
