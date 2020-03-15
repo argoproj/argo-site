@@ -10,7 +10,7 @@ import { DocsFinder } from './docs-finder';
 require('./docs.scss');
 
 function docLink(docPath: string) {
-    return `/docs/argo/${docPath}.html`;
+    return `/docs/${docPath}.html`;
 }
 
 function getSearchSummary(searchText: string, docText: string) {
@@ -62,7 +62,7 @@ export const Docs = (props: { docHtml: string; docPath: string; proj: string; se
                     <div className='docs__search-results'>
                         {docs.length > 0 && docs.map((item) => (
                             <div className='docs__search-result' key={item.path}>
-                                <Link to={docLink(item.path)}>{item.title}</Link>
+                                <Link to={`/docs/argo/${item.path}.html`}>{item.title}</Link>
                                 <div className='docs__search-summary' dangerouslySetInnerHTML={{__html: getSearchSummary(props.searchText, item.body)}}/>
                                 {item.path}
                             </div>
