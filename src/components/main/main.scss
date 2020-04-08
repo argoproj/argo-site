@@ -373,14 +373,21 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        height: 64px;
+        height: 105px;
         line-height: 64px;
         background-color: #dfe4e9;
+        color: #6a7c93;
     }
 
     &__footer-logo {
-        display: block;
-        width: 120px;
-        padding: 0 20px;
+        text-align: center;
+        img {
+            max-width: 300px;
+        }
+
+        p {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }    
     }
 }

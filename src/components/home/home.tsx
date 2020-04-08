@@ -10,14 +10,22 @@ require('./home.scss');
 const data: string = require('raw-loader!../../assets/clearbit-logos.txt');
 const manuallyAddedLogos = require('../../assets/logos.json');
 
+function distinct(items: {url: string, src: string}[]) {
+    const urls = new Map<string, {url: string, src: string}>();
+    items.forEach((item) => urls.set(item.url, item));
+    return Array.from(urls.entries()).map((entry) => entry[1]);
+}
+
 export const Home = () => {
-    const logos = Array.from(new Set(data.split('\n').filter((url) => !!url))).map((domain) => ({
+    let logos = Array.from(new Set(data.split('\n').filter((url) => !!url))).map((domain) => ({
         url: `https://${domain}`,
         src: `https://logo.clearbit.com/${domain}`,
     })).concat(Object.keys(manuallyAddedLogos).filter((domain) => !!manuallyAddedLogos[domain]).map((domain) => ({
         url: `https://${domain}`,
         src: require(`../../assets/images/logos/${manuallyAddedLogos[domain]}`),
     })));
+
+    logos = distinct(logos);
 
     logos.sort((first, second) => first.url.replace(/^(https:\/\/www\.)/, '').localeCompare(second.url.replace(/^(https:\/\/www\.)/, '')));
 

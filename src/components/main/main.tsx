@@ -84,9 +84,10 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                 </div>
                 <div className='main__footer'>
                     <div className='main__container'>
-                        <a className='main__footer-logo' href='https://www.intuit.com' target='_blank'>
+                        <div className='main__footer-logo'>
                             <img src={logoSvg} alt=''/>
-                        </a>
+                            <p>We are a <a href='https://www.cncf.io'>Cloud Native Computing Foundation</a> incubating project.</p>
+                        </div>
                     </div>
                 </div>
             </div>
