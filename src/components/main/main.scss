@@ -377,6 +377,9 @@ body {
         line-height: 64px;
         background-color: #dfe4e9;
         color: #6a7c93;
+        @media screen and (max-width: 39.9375em) {
+            font-size: 0.75em;
+        }
     }
 
     &__footer-logo {
