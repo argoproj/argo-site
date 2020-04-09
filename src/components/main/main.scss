@@ -369,6 +369,7 @@ body {
     }
 
     &__footer {
+        text-align: center;
         position: absolute;
         right: 0;
         bottom: 0;
@@ -383,7 +384,6 @@ body {
     }
 
     &__footer-logo {
-        text-align: center;
         img {
             max-width: 300px;
         }
@@ -392,5 +392,13 @@ body {
             padding-bottom: 0;
             margin-bottom: 0;
         }    
+    }
+
+    &__trademark {
+        text-align: center;
+        padding: 1em;
+        line-height: 1.5em;
+        background: #270c53;
+        color: #DEE6EB;
     }
 }

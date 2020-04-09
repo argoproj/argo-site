@@ -89,6 +89,13 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                             <p>We are a <a href='https://www.cncf.io'>Cloud Native Computing Foundation</a> incubating project.</p>
                         </div>
                     </div>
+                    <div className='main__trademark'>
+                        <div className='main__container'>
+                            2020 © Argo Project Authors. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks.
+                            For a list of trademarks of The Linux Foundation, please see our Trademark Usage page: <a href='https://www.linuxfoundation.org/trademark-usage'>
+                                https://www.linuxfoundation.org/trademark-usage</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
