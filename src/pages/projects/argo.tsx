@@ -6,6 +6,9 @@ export default () => {
     return (
         <Main>
             <Project noReplace={true} proj='argo' animationType='connections' markdownHtml='
+<a class="github-button" href="https://github.com/argoproj/argo" data-icon="octicon-star" data-show-count="true" aria-label="Star argoproj/argo on GitHub">Star</a>
+<a class="github-button" href="https://github.com/argoproj/argo/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork argoproj/argo on GitHub">Fork</a>
+<h1>Container-native Workflow Engine</h1>
 <h2>What is Argo Workflows?</h2>
 <p>Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD.</p>
 <ul>
@@ -20,29 +23,6 @@ export default () => {
 <li>Cloud agnostic and can run on any Kubernetes cluster.</li>
 <li>Easily orchestrate highly parallel jobs on Kubernetes.</li>
 <li>Argo Workflows puts a cloud-scale supercomputer at your fingertips!</li>
-</ul>
-<h2>Features</h2>
-<ul>
-<li>DAG or Steps based declaration of workflows</li>
-<li>Artifact support (S3, Artifactory, HTTP, Git, raw)</li>
-<li>Step level input &#x26; outputs (artifacts/parameters)</li>
-<li>Loops</li>
-<li>Parameterization</li>
-<li>Conditionals</li>
-<li>Timeouts (step &#x26; workflow level)</li>
-<li>Retry (step &#x26; workflow level)</li>
-<li>Resubmit (memoized)</li>
-<li>Suspend &#x26; Resume</li>
-<li>Cancellation</li>
-<li>K8s resource orchestration</li>
-<li>Exit Hooks (notifications, cleanup)</li>
-<li>Garbage collection of completed workflow</li>
-<li>Scheduling (affinity/tolerations/node selectors)</li>
-<li>Volumes (ephemeral/existing)</li>
-<li>Parallelism limits</li>
-<li>Daemoned steps</li>
-<li>DinD (docker-in-docker)</li>
-<li>Script steps</li>
 </ul>
 '
               docsLink='/docs/argo/readme.html'/>

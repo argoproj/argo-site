@@ -6,6 +6,8 @@ export default () => {
     return (
         <Main>
             <Project proj='argo-events' noReplace={true} animationType='solar-system' markdownHtml='
+<a class="github-button" href="https://github.com/argoproj/argo-events" data-icon="octicon-star" data-show-count="true" aria-label="Star argoproj/argo-events on GitHub">Star</a>
+<a class="github-button" href="https://github.com/argoproj/argo-events/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork argoproj/argo-events on GitHub">Fork</a>
 <h1>Argo Events - The Event-Based Dependency Manager for Kubernetes</h1>
 <p align="center">
   <img src="https://raw.githubusercontent.com/argoproj/argo-events/master/docs/assets/logo.png" alt="Logo">

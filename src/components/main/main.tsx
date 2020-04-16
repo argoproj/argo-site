@@ -51,6 +51,7 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                 <Helmet title='Argo'>
                     <link rel='icon' type='image/png' href='/favicon/favicon-32x32.png' sizes='32x32'/>
                     <link rel='icon' type='image/png' href='/favicon/favicon-16x16.png' sizes='16x16'/>
+                    <script async={true} defer={true} src='https://buttons.github.io/buttons.js'/>
                 </Helmet>
                 <div className={classNames('main__header', {solid: !this.props.transparentHeader || this.state.scrolled})}>
                     <div className='main__container'>
