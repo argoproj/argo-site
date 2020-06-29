@@ -11,7 +11,6 @@ Repository for argo website: http://argoproj.io/ .
  * https://github.com/argoproj/argo-events - ../go/src/github.com/argoproj/argo-events
  * https://github.com/argoproj/argo-ci - ../argo-ci
 
-* run './scripts/copy-docs.sh'
 * start local dev server using `yarn start` and check web site at http://localhost:8000
 
 * To push changes to http://argoproj.io/ make sure you have write access to `https://github.com/argoproj/argo-site.git`
