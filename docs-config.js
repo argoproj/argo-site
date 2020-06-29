@@ -1,19 +1,9 @@
 module.exports = {
-    rootPath: '.tmp/docs',
     projs: {
         'argo': {
             title: 'Open source container-native workflow engine for Kubernetes.',
             description: 'Argo is an open source container-native workflow engine for getting work done on Kubernetes.',
-            docs: [{
-                title: 'Overview', path: 'README.md',
-                children: [{
-                    title: 'How to configure your artifact repository', path: 'docs/configure-artifact-repository.md',
-                }]
-            }, {
-                title: 'Getting started', path: 'getting-started.md',
-            }, {
-                title: 'Examples', path: 'examples/README.md',
-            }]
+            docs: []
         },
         'argo-cd': {
             title: 'Declarative continuous delivery for Kubernetes.',

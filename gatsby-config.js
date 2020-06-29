@@ -30,8 +30,5 @@ module.exports = {
                 `gatsby-remark-autolink-headers`],
             },
         },
-    ].concat({
-        resolve: 'gatsby-source-filesystem',
-        options: { path: '.tmp/docs', name: 'docs' }
-    }),
+    ],
 }
