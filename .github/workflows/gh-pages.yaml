@@ -22,7 +22,6 @@ jobs:
         run: yarn install
       - name: build
         run: |
-          yarn prepare
           yarn build
       - name: deploy
         uses: peaceiris/actions-gh-pages@v2.5.0

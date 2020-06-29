@@ -4,7 +4,6 @@ import { push } from 'gatsby-link';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { services } from '../../services';
 import { PROJECTS  } from '../projects';
 
 require('./main.scss');
@@ -60,12 +59,7 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                         </div>
                         <div className={classNames('main__header-nav', {show: this.state.showNav})}>
                             {Object.keys(PROJECTS).map((proj) => ({proj, info: PROJECTS[proj]})).map(({proj, info}) => (
-                                [
-                                    <Link key={`main_${proj}`} to={`${info.link}`}>{info.name}</Link>,
-                                    <div key={`docs_${proj}`} className='main__header-subnav'>
-                                        {services.docs.roots(proj).map((doc) => <Link key={`doc_${doc.path}_${proj}`} to={`/docs/${doc.path}.html`}>{doc.title}</Link>)}
-                                    </div>,
-                                ]
+                                <Link key={`main_${proj}`} to={`${info.link}`}>{info.name}</Link>
                             ))}
                             <a href='https://blog.argoproj.io/' target='_blank'>Blog</a>
                             <a href='http://github.com/argoproj/' target='_blank'>
