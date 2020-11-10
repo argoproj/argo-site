@@ -27,7 +27,7 @@ export default () => (
                         <div className='columns small-8 project__headline-container'>
                             <div className='project__headline'>
                                 <h1>Kubecon 2020 NA</h1>
-                                <h2>Grab your swag and found information about Argo talks here!</h2>
+                                <h2>Grab your swag and find information about Argo talks here!</h2>
                             </div>
                         </div>
                         <div className='columns small-4'>
@@ -44,11 +44,12 @@ export default () => (
                             <img src='//user-images.githubusercontent.com/426437/97396387-35b9bc00-18a4-11eb-87cc-a0639d1a4574.png'/>
                         </div>
                         <div className='columns small-6'>
-                            <img src='//user-images.githubusercontent.com/426437/97397752-3c95fe00-18a7-11eb-98e8-0254a4f71cc8.png'/>
+                            <img src='//user-images.githubusercontent.com/426437/98578873-bd270800-2272-11eb-8ca3-8e4370bf8fb3.png'/>
                         </div>
                     </div>
+                    <br/>
 
-                    <a className='btn btn--filled' href='https://github.com/argoproj/argo-site/files/5454289/backgrounds.zip'>One click downloads all backgrounds</a>
+                    <a className='btn btn--filled' href='https://github.com/argoproj/argo-site/files/5512444/backgrounds.zip'>One click downloads all backgrounds</a>
 
                     <h2>Argo Talks</h2>
                     <ul>
@@ -62,7 +63,7 @@ export default () => (
                     <h2>Argo Needs Your Help!</h2>
                     <p>
                         📢 Intuit is hiring great engineers to work on open-source projects in the Kubernetes ecosystem. <br/>
-                        Use the following link to learn more: <a href='https://talenteq.intuit.com/Kubecon2020'>https://talenteq.intuit.com/Kubecon2020</a>
+                        Use the following link to apply: <a href='https://talenteq.intuit.com/Kubecon2020'>https://talenteq.intuit.com/Kubecon2020</a>
                     </p>
                 </div>
             </div>
