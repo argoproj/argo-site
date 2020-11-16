@@ -15,6 +15,8 @@ const talks: {title: string, link: string}[] = [{
     link: 'https://sched.co/ekDC',
 }];
 
+const demos = ['https://www.youtube.com/embed/TZgLkCFQ2tk', 'https://www.youtube.com/embed/Aqi1zyTpM44', 'https://www.youtube.com/embed/U4tCYcCK20w'];
+
 export default () => (
     <Main>
         <div className='project kubecon'>
@@ -41,15 +43,35 @@ export default () => (
                     <h2>Argo Virtual Backgrounds</h2>
                     <div className='row'>
                         <div className='columns small-6'>
-                            <img src='//user-images.githubusercontent.com/426437/97396387-35b9bc00-18a4-11eb-87cc-a0639d1a4574.png'/>
+                            <a href='https://user-images.githubusercontent.com/426437/97396387-35b9bc00-18a4-11eb-87cc-a0639d1a4574.png'>
+                                <img src={require('./1.png')}/>
+                            </a>
                         </div>
                         <div className='columns small-6'>
-                            <img src='//user-images.githubusercontent.com/426437/98578873-bd270800-2272-11eb-8ca3-8e4370bf8fb3.png'/>
+                            <a href='//user-images.githubusercontent.com/426437/98578873-bd270800-2272-11eb-8ca3-8e4370bf8fb3.png'>
+                                <img src={require('./2.png')}/>
+                            </a>
                         </div>
                     </div>
                     <br/>
 
                     <a className='btn btn--filled' href='https://github.com/argoproj/argo-site/files/5512444/backgrounds.zip'>One click downloads all backgrounds</a>
+
+                    <h2>Demos</h2>
+                    <div className='row'>
+                        {demos.map((url) => (
+                            <div key={url} className='columns small-6'>
+                                <iframe
+                                    width='350'
+                                    height='170'
+                                    src={url}
+                                    frameBorder='0'
+                                    allowFullScreen={true}
+                                    />
+                            </div>
+                        ))}
+                    </div>
+                    <br/>
 
                     <h2>Argo Talks</h2>
                     <ul>
