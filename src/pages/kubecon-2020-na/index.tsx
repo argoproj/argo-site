@@ -15,7 +15,12 @@ const talks: {title: string, link: string}[] = [{
     link: 'https://sched.co/ekDC',
 }];
 
-const demos = ['https://www.youtube.com/embed/TZgLkCFQ2tk', 'https://www.youtube.com/embed/Aqi1zyTpM44', 'https://www.youtube.com/embed/U4tCYcCK20w'];
+const demos = [
+    'https://www.youtube.com/embed/TZgLkCFQ2tk',
+    'https://www.youtube.com/embed/Aqi1zyTpM44',
+    'https://www.youtube.com/embed/U4tCYcCK20w',
+    'https://www.youtube.com/embed/hIL0E2gLkf8',
+];
 
 export default () => (
     <Main>
