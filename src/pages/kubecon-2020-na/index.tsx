@@ -16,10 +16,10 @@ const talks: {title: string, link: string}[] = [{
 }];
 
 const demos = [
-    'https://www.youtube.com/embed/TZgLkCFQ2tk',
-    'https://www.youtube.com/embed/Aqi1zyTpM44',
-    'https://www.youtube.com/embed/U4tCYcCK20w',
-    'https://www.youtube.com/embed/hIL0E2gLkf8',
+    'https://www.youtube.com/embed/TZgLkCFQ2tk', // workflows
+    'https://www.youtube.com/embed/U4tCYcCK20w', // events
+    'https://www.youtube.com/embed/0WAm0y2vLIo', // cd
+    'https://www.youtube.com/embed/hIL0E2gLkf8', // rollouts
 ];
 
 export default () => (
