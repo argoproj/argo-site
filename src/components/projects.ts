@@ -15,8 +15,8 @@ export const PROJECTS: {[name: string]: { name: string, title: string; keywords:
     },
     'argo-rollouts': {
         name: 'Argo Rollouts',
-        title: 'Advanced Deployment Controller',
-        description: ' Additional Kubernetes deployment strategies such as Blue-Green and Canary.',
+        title: 'Rollouts',
+        description: 'Additional Kubernetes deployment strategies such as Blue-Green and Canary.',
         link: '/argo-rollouts',
         keywords: ['gitops', 'continuous-delivery', 'blue-green', 'canary', 'kubernetes'],
     },
