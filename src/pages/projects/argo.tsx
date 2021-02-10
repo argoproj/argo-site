@@ -6,8 +6,8 @@ export default () => {
     return (
         <Main>
             <Project noReplace={true} proj='argo' animationType='connections' markdownHtml='
-<a class="github-button" href="https://github.com/argoproj/argo" data-icon="octicon-star" data-show-count="true" aria-label="Star argoproj/argo on GitHub">Star</a>
-<a class="github-button" href="https://github.com/argoproj/argo/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork argoproj/argo on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/argoproj/argo-workflows" data-icon="octicon-star" data-show-count="true" aria-label="Star argoproj/argo-workflows on GitHub">Star</a>
+<a class="github-button" href="https://github.com/argoproj/argo-workflows/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork argoproj/argo-workflows on GitHub">Fork</a>
 <h1>Container-native Workflow Engine</h1>
 <h2>What is Argo Workflows?</h2>
 <p>Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD.</p>
