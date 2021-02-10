@@ -25,7 +25,7 @@ export default () => {
 <li>Argo Workflows puts a cloud-scale supercomputer at your fingertips!</li>
 </ul>
 '
-             docsLink='https://argoproj.github.io/argo/'/>
+             docsLink='https://argoproj.github.io/argo-workflows/'/>
         </Main>
     );
 };
