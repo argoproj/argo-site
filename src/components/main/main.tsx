@@ -65,7 +65,7 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                             <a href='http://github.com/argoproj/' target='_blank'>
                                 <i className='fa fa-github' /> <span className='github-text'>GitHub Project</span>
                             </a>
-                            <a href='https://argoproj.github.io/community/join-slack' target='_blank'>
+                            <a href='https://argoproj.slack.com' target='_blank'>
                                 <i className='fa fa-slack' /> <span className='github-text'>GitHub Project</span>
                             </a>
                             <div className='main__header-nav-close' onClick={() => this.setState({ showNav: false })}>
