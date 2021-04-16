@@ -7,6 +7,10 @@ const channelLinks: {[channel: string]: string} = {
     'argo-workflows': 'https://cloud-native.slack.com/archives/C01QW9QSSSK',
     'argo-cd': 'https://cloud-native.slack.com/archives/C01TSERG0KZ',
     'argo-rollouts': 'https://cloud-native.slack.com/archives/C01U781DW2E',
+    'argo-events': 'https://cloud-native.slack.com/archives/C01TNKD6KL6',
+    'argo-cd-notifications': 'https://cloud-native.slack.com/archives/C01UKS2NKK3',
+    'argo-cd-appset': 'https://cloud-native.slack.com/archives/C01U45M2SVB',
+    'argo-sig-ui': 'https://cloud-native.slack.com/archives/C01TR44A8NB',
 };
 
 export default () => (
