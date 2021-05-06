@@ -11,6 +11,7 @@ const channelLinks: {[channel: string]: string} = {
     'argo-cd-notifications': 'https://cloud-native.slack.com/archives/C01UKS2NKK3',
     'argo-cd-appset': 'https://cloud-native.slack.com/archives/C01U45M2SVB',
     'argo-sig-ui': 'https://cloud-native.slack.com/archives/C01TR44A8NB',
+    'argo-cd-autopilot': 'https://cloud-native.slack.com/archives/C0207C47D0X',
 };
 
 export default () => (
