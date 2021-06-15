@@ -1,0 +1,28 @@
+@layer base {
+  body {
+    @apply text-dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    @apply transition-colors ease-linear duration-100 hover:text-primary focus:text-primary;
+  }
+
+  a,
+  button,
+  input {
+    @apply outline-none focus:outline-none focus:ring;
+  }
+
+  /**
+   * Selection
+   */
+  ::-moz-selection {
+    @apply bg-primary text-white;
+  }
+
+  ::selection {
+    @apply bg-primary text-white;
+  }
+}
