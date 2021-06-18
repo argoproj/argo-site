@@ -12,7 +12,7 @@ const Features = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(
+        allMdx(
           filter: { fileAbsolutePath: { regex: "/(features)/" } }
           sort: { order: ASC, fields: frontmatter___order }
         ) {
@@ -25,7 +25,7 @@ const Features = () => {
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 800
+                      width: 1200
                       placeholder: BLURRED
                       formats: [AUTO, WEBP, AVIF]
                     )
@@ -41,12 +41,12 @@ const Features = () => {
 
   return (
     <>
-      {query.allMarkdownRemark.edges.map((item, index) => {
+      {query.allMdx.edges.map((item, index) => {
         return (
           <Feature
             key={item.node.frontmatter.title}
             alignY="center"
-            className="my-4"
+            className="my-12 text-center lg:my-0 lg:text-left"
             imgSide={index % 2 !== 0 ? "top-right" : ""}
             image={
               <GatsbyImage
@@ -54,11 +54,15 @@ const Features = () => {
                   item.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
                 alt={item.node.frontmatter.title}
+                className="block mx-auto h-auto w-48 lg:w-auto lg:max-w-lg"
               />
             }>
             <FeatureTitle>{item.node.frontmatter.title}</FeatureTitle>
 
-            <Stargazers repo={item.node.frontmatter.repo} className="mb-8" />
+            <Stargazers
+              repo={item.node.frontmatter.repo}
+              className="mb-4 md:mb-8"
+            />
 
             <FeatureDescription>
               {item.node.frontmatter.description}

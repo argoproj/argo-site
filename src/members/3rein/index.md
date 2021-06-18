@@ -1,5 +1,5 @@
 ---
-title: "3 Rein"
-site: "https://3rein.com"
+title: "bonprix"
+site: "https://en.bonprix.de"
 logo: "mlb.svg"
 ---

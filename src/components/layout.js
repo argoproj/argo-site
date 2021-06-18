@@ -1,5 +1,4 @@
 import * as React from "react"
-
 import Header from "./header"
 import Footer from "./footer"
 
@@ -7,6 +6,7 @@ const Layout = ({
   location,
   title,
   hero,
+  headerColor,
   hideHeader,
   hideFooter,
   children,
@@ -20,7 +20,7 @@ const Layout = ({
         Skip to content
       </a>
 
-      {!hideHeader && <Header />}
+      {!hideHeader && <Header color={headerColor} />}
 
       <main>
         {hero}

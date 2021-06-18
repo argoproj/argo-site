@@ -1,6 +1,23 @@
 import * as React from "react"
 import classNames from "classnames"
 
+const colsXs = xs => {
+  return {
+    "grid-cols-1": xs === 1,
+    "grid-cols-2": xs === 2,
+    "grid-cols-3": xs === 3,
+    "grid-cols-4": xs === 4,
+    "grid-cols-5": xs === 5,
+    "grid-cols-6": xs === 6,
+    "grid-cols-7": xs === 7,
+    "grid-cols-8": xs === 8,
+    "grid-cols-9": xs === 9,
+    "grid-cols-10": xs === 10,
+    "grid-cols-11": xs === 11,
+    "grid-cols-12": xs === 12,
+  }
+}
+
 const colsSm = sm => {
   return {
     "sm:grid-cols-1": sm === 1,
@@ -111,6 +128,7 @@ export function Container({ className, children }) {
 }
 
 export function Grid({
+  xs,
   sm,
   md,
   lg,
@@ -123,6 +141,7 @@ export function Grid({
 }) {
   const classes = classNames({
     "grid gap-2": true,
+    ...colsXs(xs),
     ...colsSm(sm),
     ...colsMd(md),
     ...colsLg(lg),

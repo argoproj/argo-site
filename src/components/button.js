@@ -14,13 +14,17 @@ const Button = ({ label, type, to, external, className }) => {
 
   return (
     <>
-      {external ? (
+      {external && (
         <a href={to} className={btnClasses}>
-          {label}
+          {" "}
+          {label}{" "}
         </a>
-      ) : (
+      )}
+
+      {!external && (
         <Link to={to} className={btnClasses}>
-          {label}
+          {" "}
+          {label}{" "}
         </Link>
       )}
     </>

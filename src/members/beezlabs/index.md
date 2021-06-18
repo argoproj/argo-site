@@ -1,5 +1,5 @@
 ---
-title: "Beez Labs"
-site: "https://beezlabs.com"
+title: "Basis AI"
+site: "https://basis-ai.com"
 logo: "mlb.svg"
 ---

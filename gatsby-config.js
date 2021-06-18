@@ -9,32 +9,27 @@ module.exports = {
       {
         title: "Workflows",
         url: "/workflows",
+        external: false,
       },
       {
         title: "ArgoCD",
-        url: "/ArgoCD",
+        url: "/gitops-cd",
+        external: false,
       },
       {
         title: "Rollouts",
         url: "/rollouts",
+        external: false,
       },
       {
         title: "Events",
         url: "/events",
+        external: false,
       },
       {
         title: "Blog",
-        url: "/blog",
-      },
-    ],
-    companies: [
-      {
-        name: "Alibaba",
-        url: "../images/companies/alibaba.svg",
-      },
-      {
-        name: "Alibaba",
-        url: "../images/companies/alibaba.svg",
+        url: "https://blog.argoproj.io",
+        external: true,
       },
     ],
   },
@@ -62,6 +57,20 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

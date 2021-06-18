@@ -1,18 +1,25 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import classNames from "classnames"
 
-const NavItem = ({ title, url, type }) => {
+const NavItem = ({ title, url, external, color }) => {
+  const linkClass = classNames({
+    "font-bold": true,
+    "text-white lg:text-dark hover:text-primary": color === "light",
+    "text-white hover:text-primary": color !== "light",
+  })
+
   return (
-    <li className="py-2 lg:px-0 lg:mx-3 lg:mb-0">
-      {type ? (
-        <a href={url} className="text-white hover:text-primary">
-          {title}
+    <li>
+      {external && (
+        <a href={url} className={linkClass}>
+          {" "}
+          {title}{" "}
         </a>
-      ) : (
-        <Link
-          to={url}
-          className="text-white hover:text-primary"
-          activeClassName="nav-item-active">
+      )}
+
+      {!external && (
+        <Link to={url} className={linkClass} activeClassName="nav-item--active">
           {title}
         </Link>
       )}

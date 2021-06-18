@@ -34,5 +34,21 @@
         padding-bottom: calc(calc(calc(100vw - 0px) * 0.05) + 6rem);
       }
     }
+
+    .burger-dark {
+      .burger-lines,
+      .burger-lines::before,
+      .burger-lines::after {
+        @apply bg-dark;
+      }
+    }
+  }
+
+  .nav-item--active {
+    @apply text-primary #{!important};
+  }
+
+  .nav--active {
+    @apply left-0 #{!important};
   }
 }

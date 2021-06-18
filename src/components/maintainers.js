@@ -30,15 +30,15 @@ const Maintainers = () => {
       {query.allMarkdownRemark.edges.map((item, index) => {
         return (
           <div
-            className="w-full px-1 lg:w-1/6"
+            className="w-1/2 py-1 px-1 lg:w-1/6"
             key={item.node.frontmatter.title}>
-            <div className="bg-white rounded-xl">
+            <div className="bg-white rounded-xl transition-shadow duration-200 group hover:shadow-lg">
               <a
                 href={item.node.frontmatter.site}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block">
-                <div className="py-2 text-gray text-center text-sm border-b-2 border-light">
+                <div className="py-2 text-gray text-center text-sm border-b-2 border-light transition-colors duration-200 group-hover:text-primary">
                   {item.node.frontmatter.title}
                 </div>
 
