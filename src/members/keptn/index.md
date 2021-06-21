@@ -1,5 +1,5 @@
 ---
 title: "Keptn"
 site: "https://keptn.sh"
-logo: "mlb.svg"
+logo: "../../images/members/keptn.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Swisscom"
 site: "https://swisscom.ch"
-logo: "mlb.svg"
+logo: "../../images/members/swisscom.svg"
 ---

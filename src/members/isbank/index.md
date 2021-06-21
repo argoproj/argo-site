@@ -1,5 +1,5 @@
 ---
 title: "Isbank"
 site: "https://isbank.com.tr"
-logo: "mlb.svg"
+logo: "../../images/members/isbank.svg"
 ---

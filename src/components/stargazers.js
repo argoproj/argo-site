@@ -41,7 +41,7 @@ const Stargazers = ({ repo, className }) => {
           target="_blank"
           rel="noopener noreferrer"
           title="Follow us on GitHub"
-          className="inline-block">
+          className="stargazers inline-block">
           <div className={wrapperClass}>
             <GithubIcon className="mr-2.5 h-4 w-auto" />
             <StarIcon className="mr-2 w-5 h-auto" />

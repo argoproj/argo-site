@@ -1,5 +1,5 @@
 ---
 title: "PUBG"
 site: "https://pubg.com"
-logo: "mlb.svg"
+logo: "../../images/members/pubg.svg"
 ---

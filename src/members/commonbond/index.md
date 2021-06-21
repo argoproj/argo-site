@@ -1,5 +1,5 @@
 ---
-title: "Croz"
-site: "https://croz.co"
-logo: "mlb.svg"
+title: "commonbond"
+site: "https://commonbond.co"
+logo: "../../images/members/commonbond.svg"
 ---

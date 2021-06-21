@@ -1,5 +1,5 @@
 ---
 title: "Microblink"
 site: "https://microblink.com"
-logo: "mlb.svg"
+logo: "../../images/members/microblink.svg"
 ---

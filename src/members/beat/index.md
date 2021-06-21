@@ -1,5 +1,5 @@
 ---
 title: "Beat"
 site: "https://thebeat.co"
-logo: "mlb.svg"
+logo: "../../images/members/beat.svg"
 ---

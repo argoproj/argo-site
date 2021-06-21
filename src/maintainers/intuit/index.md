@@ -1,5 +1,5 @@
 ---
 title: "Intuit"
 site: "https://intuit.com"
-logo: "alibaba.svg"
+logo: "../../images/members/intuit.svg"
 ---

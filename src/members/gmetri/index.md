@@ -1,5 +1,5 @@
 ---
 title: "gmetri"
 site: "https://gmetri.com"
-logo: "mlb.svg"
+logo: "../../images/members/gmetri.svg"
 ---

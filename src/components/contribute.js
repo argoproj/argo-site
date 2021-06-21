@@ -1,9 +1,26 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
 import GithubIcon from "../svg/github.svg"
 import SlackIcon from "../svg/slack.svg"
 
 const Contribute = ({ size, color, className }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            social {
+              twitter
+              github
+              slack
+            }
+          }
+        }
+      }
+    `
+  )
+
   const wrapperClass = classNames({
     "flex justify-center space-x-8 lg:space-x-4": true,
     [className]: className,
@@ -27,7 +44,7 @@ const Contribute = ({ size, color, className }) => {
   return (
     <div className={wrapperClass}>
       <a
-        href="/"
+        href={site.siteMetadata.social.github}
         aria-label="github"
         target="_blank"
         rel="noopener noreferrer"
@@ -37,7 +54,7 @@ const Contribute = ({ size, color, className }) => {
       </a>
 
       <a
-        href="/"
+        href={site.siteMetadata.social.slack}
         aria-label="slack"
         target="_blank"
         rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 ---
 title: "QuantiBio"
 site: "https://quantibio.com"
-logo: "mlb.svg"
+logo: "../../images/members/quantibio.svg"
 ---

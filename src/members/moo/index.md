@@ -1,5 +1,5 @@
 ---
 title: "MOO"
 site: "https://moo.com"
-logo: "mlb.svg"
+logo: "../../images/members/moo.svg"
 ---

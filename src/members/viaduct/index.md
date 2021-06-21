@@ -1,5 +1,5 @@
 ---
 title: "Viaduct"
 site: "https://viaduct.ai"
-logo: "mlb.svg"
+logo: "../../images/members/viaduct.svg"
 ---

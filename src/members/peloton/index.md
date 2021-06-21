@@ -1,5 +1,5 @@
 ---
 title: "Peloton"
 site: "https://onepeloton.com"
-logo: "mlb.svg"
+logo: "../../images/members/peloton.svg"
 ---

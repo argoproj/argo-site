@@ -1,5 +1,5 @@
 ---
 title: "Vispera"
 site: "https://vispera.co"
-logo: "mlb.svg"
+logo: "../../images/members/vispera.svg"
 ---

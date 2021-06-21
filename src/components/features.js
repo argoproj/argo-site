@@ -18,6 +18,9 @@ const Features = () => {
         ) {
           edges {
             node {
+              fields {
+                slug
+              }
               frontmatter {
                 title
                 description
@@ -69,9 +72,9 @@ const Features = () => {
             </FeatureDescription>
 
             <Button
-              to="/"
+              to={item.node?.fields?.slug}
               type="primary"
-              label="Quick Start"
+              label="Learn More"
               className="mt-8"
             />
           </Feature>

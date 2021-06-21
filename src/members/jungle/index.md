@@ -1,5 +1,5 @@
 ---
 title: "Jungle"
 site: "https://jungle.ai"
-logo: "mlb.svg"
+logo: "../../images/members/jungle.svg"
 ---

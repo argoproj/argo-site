@@ -1,5 +1,5 @@
 ---
 title: "Index Exchange"
 site: "https://indexexchange.com"
-logo: "mlb.svg"
+logo: "../../images/members/index-exchange.svg"
 ---

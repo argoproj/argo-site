@@ -1,5 +1,5 @@
 ---
-title: "Alibaba Cloud"
-site: "https://eu.alibabacloud.com"
-logo: "mlb.svg"
+title: "Adobe"
+site: "https://adobe.com"
+logo: "../../images/members/adobe.svg"
 ---

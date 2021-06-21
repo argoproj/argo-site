@@ -1,5 +1,5 @@
 ---
 title: "Softonic"
 site: "https://hello.softonic.com"
-logo: "mlb.svg"
+logo: "../../images/members/softonic.svg"
 ---

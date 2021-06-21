@@ -1,5 +1,5 @@
 ---
 title: "greenhouse"
 site: "https://greenhouse.io"
-logo: "mlb.svg"
+logo: "../../images/members/greenhouse.svg"
 ---

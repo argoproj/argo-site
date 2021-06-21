@@ -1,5 +1,5 @@
 ---
 title: "DevSamurai"
 site: "https://devsamurai.com"
-logo: "nvidia.svg"
+logo: "../../images/members/devsamurai.svg"
 ---

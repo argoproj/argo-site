@@ -1,5 +1,5 @@
 ---
 title: "Future plc"
 site: "https://futureplc.com"
-logo: "nvidia.svg"
+logo: "../../images/members/future.svg"
 ---

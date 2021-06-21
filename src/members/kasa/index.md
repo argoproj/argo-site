@@ -1,5 +1,5 @@
 ---
 title: "Kasa"
 site: "https://kasa.co.kr"
-logo: "mlb.svg"
+logo: "../../images/members/kasa.svg"
 ---

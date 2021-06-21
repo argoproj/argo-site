@@ -1,5 +1,5 @@
 ---
 title: "Moengage"
 site: "https://moengage.com"
-logo: "mlb.svg"
+logo: "../../images/members/moengage.svg"
 ---

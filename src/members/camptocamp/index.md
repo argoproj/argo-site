@@ -1,5 +1,5 @@
 ---
 title: "camptocamp"
 site: "https://camptocamp.com"
-logo: "mlb.svg"
+logo: "../../images/members/camptocamp.svg"
 ---

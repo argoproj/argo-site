@@ -1,5 +1,5 @@
 ---
 title: "Sumo Logic"
 site: "https://sumologic.com"
-logo: "mlb.svg"
+logo: "../../images/members/sumologic.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Codec"
 site: "https://codec.ai"
-logo: "nvidia.svg"
+logo: "../../images/members/codec.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Segment Stream"
 site: "https://segmentstream.com"
-logo: "mlb.svg"
+logo: "../../images/members/segmentstream.svg"
 ---

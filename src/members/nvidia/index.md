@@ -1,5 +1,5 @@
 ---
 title: "Nvidia"
 site: "https://nvidia.com"
-logo: "nvidia.svg"
+logo: "../../images/members/nvidia.svg"
 ---

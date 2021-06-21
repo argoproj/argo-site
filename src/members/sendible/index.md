@@ -1,5 +1,5 @@
 ---
 title: "Sendible"
 site: "https://sendible.com"
-logo: "mlb.svg"
+logo: "../../images/members/sendible.svg"
 ---

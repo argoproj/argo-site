@@ -1,5 +1,5 @@
 ---
 title: "Schwarz"
 site: "https://jobs.schwarz"
-logo: "mlb.svg"
+logo: "../../images/members/schwarz.svg"
 ---

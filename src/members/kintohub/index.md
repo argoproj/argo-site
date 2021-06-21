@@ -1,5 +1,5 @@
 ---
 title: "KintoHub"
 site: "https://kintohub.com"
-logo: "mlb.svg"
+logo: "../../images/members/kintohub.svg"
 ---

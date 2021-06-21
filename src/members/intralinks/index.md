@@ -1,5 +1,5 @@
 ---
 title: "Intralinks"
 site: "https://intralinks.com"
-logo: "mlb.svg"
+logo: "../../images/members/intralinks.svg"
 ---

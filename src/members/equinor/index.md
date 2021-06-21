@@ -1,5 +1,5 @@
 ---
 title: "Equinor"
 site: "https://equinor.com"
-logo: "nvidia.svg"
+logo: "../../images/members/equinor.svg"
 ---

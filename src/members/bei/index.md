@@ -1,5 +1,5 @@
 ---
 title: "bei"
 site: "https://bei.re"
-logo: "mlb.svg"
+logo: "../../images/members/bei.svg"
 ---

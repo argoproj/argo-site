@@ -27,7 +27,7 @@ const Maintainers = () => {
 
   return (
     <div className="flex flex-wrap justify-center -mx-1">
-      {query.allMarkdownRemark.edges.map((item, index) => {
+      {query.allMarkdownRemark.edges.map(item => {
         return (
           <div
             className="w-1/2 py-1 px-1 lg:w-1/6"
@@ -45,7 +45,7 @@ const Maintainers = () => {
                 <div className="aspect-w-4 aspect-h-3">
                   <div className="flex items-center justify-center">
                     <img
-                      src={item.node.frontmatter.logo.publicURL}
+                      src={item.node.frontmatter.logo?.publicURL}
                       alt={item.node.frontmatter.title}
                       title={item.node.frontmatter.title}
                       className="absolute w-auto h-auto max-w-full max-h-16"

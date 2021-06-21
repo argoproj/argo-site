@@ -1,5 +1,5 @@
 ---
 title: "Yieldlab"
 site: "https://yieldlab.com"
-logo: "mlb.svg"
+logo: "../../images/members/yieldlab.svg"
 ---

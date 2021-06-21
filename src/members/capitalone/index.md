@@ -1,5 +1,5 @@
 ---
 title: "Capital One"
 site: "https://capitalone.com"
-logo: "nvidia.svg"
+logo: "../../images/members/capitalone.svg"
 ---

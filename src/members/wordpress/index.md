@@ -1,5 +1,5 @@
 ---
 title: "Wordpress"
 site: "https://wordpress.com"
-logo: "mlb.svg"
+logo: "../../images/members/wordpress.svg"
 ---

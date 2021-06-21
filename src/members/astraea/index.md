@@ -1,5 +1,5 @@
 ---
 title: "Astraea"
 site: "https://astraea.earth"
-logo: "mlb.svg"
+logo: "../../images/members/astraea.svg"
 ---

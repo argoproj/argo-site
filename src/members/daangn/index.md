@@ -1,5 +1,5 @@
 ---
 title: "Daangn"
 site: "https://daangn.com"
-logo: "nvidia.svg"
+logo: "../../images/members/daangn.svg"
 ---

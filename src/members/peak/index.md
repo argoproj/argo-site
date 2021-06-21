@@ -1,5 +1,5 @@
 ---
 title: "Peak"
 site: "https://peak.ai"
-logo: "mlb.svg"
+logo: "../../images/members/peak.svg"
 ---

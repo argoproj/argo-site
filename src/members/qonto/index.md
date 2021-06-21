@@ -1,5 +1,5 @@
 ---
 title: "Qonto"
 site: "https://qonto.com"
-logo: "mlb.svg"
+logo: "../../images/members/qonto.svg"
 ---

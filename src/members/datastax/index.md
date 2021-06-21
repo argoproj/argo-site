@@ -1,5 +1,5 @@
 ---
 title: "DataStax"
 site: "https://datastax.com"
-logo: "nvidia.svg"
+logo: "../../images/members/datastax.svg"
 ---

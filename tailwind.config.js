@@ -27,13 +27,10 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme("colors.dark"),
-            a: {
-              color: "inherit",
-              textDecoration: "inherit",
-            },
-            "a:not('.btn')": {
+            a: null,
+            "a:not(.btn, .stargazers)": {
               color: theme("colors.primary"),
-              textDecoration: "none",
+              textDecoration: "underline",
             },
             "h1, h2, h3, h4, h5, h6": {
               fontWeight: theme("fontWeight.extrabold"),
@@ -53,6 +50,9 @@ module.exports = {
       fontFamily: {
         sans: ["nunito", ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        "8xl": ["5.5rem", "1"],
+      },
       transformOrigin: {
         "-full-0": "-100% 0",
         "0-0": "0% 0",
@@ -62,6 +62,9 @@ module.exports = {
         "-1": "-1",
         998: "998",
         999: "999",
+      },
+      maxWidth: {
+        "9/12": "75%",
       },
       transitionProperty: {
         left: "left",

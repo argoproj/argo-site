@@ -1,5 +1,5 @@
 ---
 title: "edX"
 site: "https://edx.org"
-logo: "nvidia.svg"
+logo: "../../images/members/edx.svg"
 ---

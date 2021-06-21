@@ -1,5 +1,5 @@
 ---
 title: "VSHN"
 site: "https://vshn.ch"
-logo: "mlb.svg"
+logo: "../../images/members/vshn.svg"
 ---

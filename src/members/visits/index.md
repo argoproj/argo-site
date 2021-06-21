@@ -1,5 +1,5 @@
 ---
 title: "Visits"
 site: "https://visits.world"
-logo: "mlb.svg"
+logo: "../../images/members/visits.svg"
 ---

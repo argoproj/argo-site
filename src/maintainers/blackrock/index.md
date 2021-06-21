@@ -1,5 +1,5 @@
 ---
 title: "BlackRock"
 site: "https://blackrock.com"
-logo: "logo.svg"
+logo: "../../images/members/blackrock.svg"
 ---

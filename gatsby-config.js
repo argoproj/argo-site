@@ -4,6 +4,8 @@ module.exports = {
     description: "Open source Kubernetes native workflows, events, CI and CD",
     social: {
       twitter: "",
+      github: "https://github.com/argoproj",
+      slack: "https://argoproj.github.io/community/join-slack",
     },
     navigation: [
       {
@@ -65,7 +67,9 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 1200,
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+              backgroundColor: "red",
             },
           },
         ],

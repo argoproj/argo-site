@@ -1,5 +1,5 @@
 ---
 title: "Arctiq"
 site: "https://arctiq.ca"
-logo: "mlb.svg"
+logo: "../../images/members/arctiq.svg"
 ---

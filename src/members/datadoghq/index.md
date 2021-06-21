@@ -1,5 +1,5 @@
 ---
 title: "Datadog"
 site: "https://datadoghq.com"
-logo: "nvidia.svg"
+logo: "../../images/members/datadog.svg"
 ---

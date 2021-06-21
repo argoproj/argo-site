@@ -1,5 +1,5 @@
 ---
 title: "EBSCO"
 site: "https://ebsco.com"
-logo: "nvidia.svg"
+logo: "../../images/members/ebsco.svg"
 ---

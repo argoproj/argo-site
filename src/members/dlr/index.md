@@ -1,5 +1,5 @@
 ---
 title: "DLR"
 site: "https://dlr.de"
-logo: "nvidia.svg"
+logo: "../../images/members/dlr.svg"
 ---

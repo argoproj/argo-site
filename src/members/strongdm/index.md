@@ -1,5 +1,5 @@
 ---
 title: "StrongDM"
 site: "https://strongdm.com"
-logo: "mlb.svg"
+logo: "../../images/members/strongdm.svg"
 ---

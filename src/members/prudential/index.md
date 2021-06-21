@@ -1,5 +1,5 @@
 ---
 title: "Prudential"
 site: "https://prudential.com.sg"
-logo: "mlb.svg"
+logo: "../../images/members/prudential.svg"
 ---

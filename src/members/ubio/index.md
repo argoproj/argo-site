@@ -1,5 +1,5 @@
 ---
 title: "Ubio"
 site: "https://ub.io"
-logo: "mlb.svg"
+logo: "../../images/members/ubio.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Pdok"
 site: "https://pdok.nl"
-logo: "mlb.svg"
+logo: "../../images/members/pdok.svg"
 ---

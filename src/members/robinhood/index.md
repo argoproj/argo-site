@@ -1,5 +1,5 @@
 ---
 title: "Robinhood"
 site: "https://robinhood.com"
-logo: "mlb.svg"
+logo: "../../images/members/robinhood.svg"
 ---

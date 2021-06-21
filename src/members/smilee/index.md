@@ -1,5 +1,5 @@
 ---
 title: "Smilee"
 site: "https://smilee.io"
-logo: "mlb.svg"
+logo: "../../images/members/smilee.svg"
 ---

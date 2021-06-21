@@ -1,5 +1,5 @@
 ---
 title: "Motus"
 site: "https://motus.com"
-logo: "mlb.svg"
+logo: "../../images/members/motus.svg"
 ---

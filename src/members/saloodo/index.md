@@ -1,5 +1,5 @@
 ---
 title: "Saloodo"
 site: "https://saloodo.com"
-logo: "mlb.svg"
+logo: "../../images/members/saloodo.svg"
 ---

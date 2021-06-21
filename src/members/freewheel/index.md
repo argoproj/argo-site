@@ -1,5 +1,5 @@
 ---
 title: "FreeWheel"
 site: "https://freewheel.com"
-logo: "mlb.svg"
+logo: "../../images/members/freewheel.svg"
 ---

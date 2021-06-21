@@ -1,5 +1,5 @@
 ---
 title: "Codefresh"
 site: "https://codefresh.io"
-logo: "alibaba.svg"
+logo: "../../images/members/codefresh.svg"
 ---

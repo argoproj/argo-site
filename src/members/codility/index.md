@@ -1,5 +1,5 @@
 ---
 title: "Codility"
 site: "https://codility.com"
-logo: "nvidia.svg"
+logo: "../../images/members/codility.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Handelsbanken"
 site: "https://handelsbanken.com"
-logo: "mlb.svg"
+logo: "../../images/members/handelsbanken.svg"
 ---

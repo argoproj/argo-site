@@ -1,5 +1,5 @@
 ---
 title: "Arthur"
 site: "https://arthur.ai"
-logo: "mlb.svg"
+logo: "../../images/members/arthur.svg"
 ---

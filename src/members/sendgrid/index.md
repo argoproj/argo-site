@@ -1,5 +1,5 @@
 ---
 title: "SendGrid"
 site: "https://sendgrid.com"
-logo: "mlb.svg"
+logo: "../../images/members/sendgrid.svg"
 ---

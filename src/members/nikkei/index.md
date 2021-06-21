@@ -1,5 +1,5 @@
 ---
 title: "Nikkei"
 site: "https://nikkei.com"
-logo: "mlb.svg"
+logo: "../../images/members/nikkei.svg"
 ---

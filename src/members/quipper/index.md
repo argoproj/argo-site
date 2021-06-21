@@ -1,5 +1,5 @@
 ---
 title: "Quipper"
 site: "https://quipper.com"
-logo: "mlb.svg"
+logo: "../../images/members/quipper.svg"
 ---

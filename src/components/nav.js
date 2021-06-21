@@ -45,7 +45,6 @@ const Nav = ({ isOpen, color }) => {
   React.useEffect(() => {
     return function cleanup() {
       clearAllBodyScrollLocks()
-      console.log("CLEARUP")
     }
   }, [])
 
@@ -57,7 +56,7 @@ const Nav = ({ isOpen, color }) => {
 
   return (
     <nav ref={targetRef} className={navClass}>
-      <ul className="px-4 h-full space-y-5 text-2xl lg:flex lg:h-auto lg:space-x-6 lg:space-y-0 lg:text-base">
+      <ul className="px-4 h-full space-y-5 text-2xl lg:flex lg:h-auto lg:space-x-6 lg:space-y-0 lg:text-lg">
         {site.siteMetadata.navigation.map(link => (
           <NavItem
             key={link.title}

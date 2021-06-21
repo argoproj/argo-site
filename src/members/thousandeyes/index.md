@@ -1,5 +1,5 @@
 ---
 title: "ThousandEyes"
 site: "https://thousandeyes.com"
-logo: "mlb.svg"
+logo: "../../images/members/thousandeyes.svg"
 ---

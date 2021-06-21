@@ -1,5 +1,5 @@
 ---
 title: "Upland"
 site: "https://uplandsoftware.com"
-logo: "mlb.svg"
+logo: "../../images/members/upland.svg"
 ---

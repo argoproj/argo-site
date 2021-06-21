@@ -1,5 +1,5 @@
 ---
 title: "Red Hat"
 site: "https://redhat.com"
-logo: "mlb.svg"
+logo: "../../images/members/redhat.svg"
 ---

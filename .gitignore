@@ -8,3 +8,4 @@ yarn-error.log
 .vscode/
 .cache/
 public
+.DS_Store

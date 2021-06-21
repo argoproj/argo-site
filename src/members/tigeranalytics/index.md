@@ -1,5 +1,5 @@
 ---
 title: "Tiger Analytics"
 site: "https://tigeranalytics.com"
-logo: "mlb.svg"
+logo: "../../images/members/tiger-analytics.svg"
 ---

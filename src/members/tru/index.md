@@ -1,5 +1,5 @@
 ---
 title: "Tru"
 site: "https://tru.id"
-logo: "mlb.svg"
+logo: "../../images/members/tru.svg"
 ---

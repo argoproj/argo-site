@@ -1,5 +1,5 @@
 ---
 title: "Intuit"
 site: "https://intuit.com"
-logo: "mlb.svg"
+logo: "../../images/members/intuit.svg"
 ---

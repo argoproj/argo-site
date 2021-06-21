@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -12,6 +13,22 @@ import HeroWrapper from "../components/hero-wrapper"
 import HeartIcon from "../svg/heart.svg"
 
 const IndexPage = ({ location }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            social {
+              twitter
+              github
+              slack
+            }
+          }
+        }
+      }
+    `
+  )
+
   return (
     <Layout location={location}>
       <Seo
@@ -23,34 +40,30 @@ const IndexPage = ({ location }) => {
 
       <HeroWrapper bg="dark">
         <Grid lg={2} alignY="center">
-          <div className="text-white">
-            <h1 className="pr-12 xl:pr-36 2xl:pr-48">
+          <div className="relative z-10 text-white">
+            <h1 className="pr-12 xl:pr-12 text-5xl lg:text-7xl 2xl:pr-0 2xl:text-8xl">
               Get More Done with{" "}
               <span className="text-primary">Kubernetes</span>
             </h1>
 
-            <p className="pr-12 text-xl xl:pr-36 2xl:pr-48">
+            <p className="pr-12 text-2xl xl:pr-36 2xl:pr-48">
               Open source tools for Kubernetes to run workflows, manage
               clusters, and do GitOps right.
             </p>
 
-            <div className="mt-8 space-y-4 md:mt-12 md:space-x-4 md:space-y-0">
+            <div className="mt-8 space-y-4 md:mt-8 md:space-x-4 md:space-y-0">
               <Button
-                to="/"
+                to={site.siteMetadata.social.github}
                 type="primary"
-                label="Quick Start"
-                className="w-full md:w-auto"
-              />
-              <Button
-                to="/"
-                type="secondary"
-                label="Vew on GitHub"
-                className="w-full md:w-auto"
+                label="View on GitHub"
               />
             </div>
           </div>
 
-          <div>
+          <div className="relative z-0">
+            <div
+              className="absolute w-full h-full transform -translate-y-64 lg:translate-y-32 translate-x-12 rounded-full filter blur-3xl opacity-30"
+              style={{ background: "#280E6B" }}></div>
             <StaticImage
               src="../images/hero.png"
               alt="Argo"
@@ -85,8 +98,8 @@ const IndexPage = ({ location }) => {
           </div>
 
           <h2 className="text-2xl text-center">
-            Maintained with <HeartIcon className="inline-block text-primary" />{" "}
-            by:
+            Maintained with{" "}
+            <HeartIcon className="inline-block -mt-px text-primary" /> by:
           </h2>
 
           <div className="pt-4 pb-40 lg:pb-48">
@@ -94,15 +107,9 @@ const IndexPage = ({ location }) => {
 
             <div className="mt-8 space-y-4 text-center md:space-x-4 md:space-y-0">
               <Button
-                to="/"
+                to={site.siteMetadata.social.github}
                 type="primary"
-                label="Quick Start"
-                className="w-full md:w-auto"
-              />
-              <Button
-                to="/"
-                type="secondary"
-                label="Vew on GitHub"
+                label="View on GitHub"
                 className="w-full md:w-auto"
               />
             </div>

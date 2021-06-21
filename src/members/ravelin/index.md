@@ -1,5 +1,5 @@
 ---
 title: "Ravelin"
 site: "https://ravelin.com"
-logo: "mlb.svg"
+logo: "../../images/members/ravelin.svg"
 ---

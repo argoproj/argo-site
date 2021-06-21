@@ -1,5 +1,5 @@
 ---
 title: "New Relic"
 site: "https://newrelic.com"
-logo: "mlb.svg"
+logo: "../../images/members/new-relic.svg"
 ---

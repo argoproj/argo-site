@@ -1,5 +1,5 @@
 ---
 title: "MaxKelsen"
 site: "https://maxkelsen.com"
-logo: "mlb.svg"
+logo: "../../images/members/maxkelsen.svg"
 ---

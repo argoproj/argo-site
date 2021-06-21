@@ -1,5 +1,5 @@
 ---
 title: "Speee"
 site: "https://speee.jp"
-logo: "mlb.svg"
+logo: "../../images/members/speee.svg"
 ---

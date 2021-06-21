@@ -1,5 +1,5 @@
 ---
 title: "Ticketmaster"
 site: "https://ticketmaster.com"
-logo: "mlb.svg"
+logo: "../../images/members/ticketmaster.svg"
 ---

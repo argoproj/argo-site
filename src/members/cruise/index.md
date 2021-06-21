@@ -1,5 +1,5 @@
 ---
 title: "Cruise"
 site: "https://getcruise.com"
-logo: "mlb.svg"
+logo: "../../images/members/cruise.svg"
 ---

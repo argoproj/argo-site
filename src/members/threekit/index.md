@@ -1,5 +1,5 @@
 ---
 title: "Threekit"
 site: "https://threekit.com"
-logo: "mlb.svg"
+logo: "../../images/members/threekit.svg"
 ---

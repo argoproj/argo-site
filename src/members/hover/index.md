@@ -1,5 +1,5 @@
 ---
 title: "hover"
 site: "https://hover.to"
-logo: "mlb.svg"
+logo: "../../images/members/hover.svg"
 ---

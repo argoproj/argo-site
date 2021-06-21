@@ -1,5 +1,5 @@
 ---
 title: "OVH"
 site: "https://ovh.co.uk"
-logo: "mlb.svg"
+logo: "../../images/members/ovh.svg"
 ---

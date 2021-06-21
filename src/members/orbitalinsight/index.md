@@ -1,5 +1,5 @@
 ---
 title: "Orbital Insight"
 site: "https://orbitalinsight.com"
-logo: "mlb.svg"
+logo: "../../images/members/orbital-insight.svg"
 ---

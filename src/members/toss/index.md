@@ -1,5 +1,5 @@
 ---
 title: "Toss"
 site: "https://toss.im"
-logo: "mlb.svg"
+logo: "../../images/members/toss.svg"
 ---

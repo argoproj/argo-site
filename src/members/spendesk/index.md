@@ -1,5 +1,5 @@
 ---
 title: "Spendesk"
 site: "https://spendesk.com"
-logo: "mlb.svg"
+logo: "../../images/members/spendesk.svg"
 ---

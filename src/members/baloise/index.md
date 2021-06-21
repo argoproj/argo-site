@@ -1,5 +1,5 @@
 ---
 title: "Baloise"
 site: "https://baloise.com"
-logo: "mlb.svg"
+logo: "../../images/members/baloise.svg"
 ---

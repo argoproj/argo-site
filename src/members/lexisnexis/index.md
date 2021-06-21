@@ -1,5 +1,5 @@
 ---
 title: "LexisNexis"
 site: "https://lexisnexis.com"
-logo: "mlb.svg"
+logo: "../../images/members/lexisnexis.svg"
 ---

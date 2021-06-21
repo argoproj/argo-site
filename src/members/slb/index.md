@@ -1,5 +1,5 @@
 ---
 title: "Schlumberger"
 site: "https://slb.com"
-logo: "mlb.svg"
+logo: "../../images/members/slb.svg"
 ---

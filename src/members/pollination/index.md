@@ -1,5 +1,5 @@
 ---
 title: "Pollination"
 site: "https://pollination.cloud"
-logo: "mlb.svg"
+logo: "../../images/members/pollination.svg"
 ---

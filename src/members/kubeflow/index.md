@@ -1,5 +1,5 @@
 ---
 title: "Kubeflow"
 site: "https://kubeflow.org"
-logo: "mlb.svg"
+logo: "../../images/members/kubeflow.svg"
 ---

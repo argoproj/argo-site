@@ -1,5 +1,5 @@
 ---
 title: "Karius"
 site: "https://kariusdx.com"
-logo: "mlb.svg"
+logo: "../../images/members/karius.svg"
 ---

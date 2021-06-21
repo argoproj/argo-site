@@ -12,7 +12,7 @@ const Footer = () => {
       <StaticImage
         src="../images/argo-mascot.png"
         alt="Argo mascot"
-        className="absolute -top-20 inset-x-0 mx-auto h-auto w-20"
+        className="!absolute -top-20 inset-x-0 mx-auto h-auto w-20"
       />
 
       <Container className="text-gray">

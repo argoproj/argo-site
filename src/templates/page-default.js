@@ -32,7 +32,7 @@ const PageTemplate = ({ data, location }) => {
             </p>
 
             <Button
-              to="/"
+              to={page.frontmatter?.docs}
               type="primary"
               label="Documentation"
               className="mb-8 mt-8"
@@ -55,6 +55,22 @@ const PageTemplate = ({ data, location }) => {
         </div>
 
         <MDXRenderer>{page.body}</MDXRenderer>
+
+        <div className="mt-6 text-center space-y-4 md:space-x-4 md:space-y-0 no-prose">
+          <Button
+            to={page.frontmatter?.docs}
+            type="primary"
+            label="View Docs"
+            className="w-full mt-8 md:w-auto"
+          />
+
+          <Button
+            to={page.frontmatter?.quickstart}
+            type="secondary"
+            label="Get Started"
+            className="w-full mt-8 md:w-auto"
+          />
+        </div>
       </Container>
     </Layout>
   )
@@ -75,6 +91,8 @@ export const pageQuery = graphql`
         title
         description
         repo
+        docs
+        quickstart
         image {
           childImageSharp {
             gatsbyImageData(

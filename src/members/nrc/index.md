@@ -1,5 +1,5 @@
 ---
 title: "NRC"
 site: "https://nrc.no"
-logo: "mlb.svg"
+logo: "../../images/members/nrc.svg"
 ---

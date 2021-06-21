@@ -1,5 +1,5 @@
 ---
 title: "Volvo"
 site: "https://volvocars.com"
-logo: "mlb.svg"
+logo: "../../images/members/volvo.svg"
 ---

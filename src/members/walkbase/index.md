@@ -1,5 +1,5 @@
 ---
 title: "Walkbase"
 site: "https://walkbase.com"
-logo: "mlb.svg"
+logo: "../../images/members/walkbase.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Coreweave"
 site: "https://coreweave.com"
-logo: "nvidia.svg"
+logo: "../../images/members/coreweave.svg"
 ---

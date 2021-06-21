@@ -13,7 +13,7 @@ const Feature = ({
   image,
 }) => {
   const sectionClasses = classNames({
-    "feature relative z-10 lg:px-32": true,
+    "feature relative z-10 xl:px-24 2xl:px-40": true,
     [className]: className,
   })
 
@@ -30,8 +30,8 @@ const Feature = ({
 
   const contentClasses = classNames({
     "lg:px-12": true,
-    "lg:pl-8 xl:pl-14": imgSide === "top-left" || imgSide === "down-left",
-    "lg:pr-8 xl:pr-14": imgSide === "top-right" || imgSide === "down-right",
+    "lg:pl-8 xl:pl-16": imgSide === "top-left" || imgSide === "down-left",
+    "lg:pr-8 xl:pr-16": imgSide === "top-right" || imgSide === "down-right",
   })
 
   return (

@@ -46,10 +46,10 @@ const Members = () => {
                 <div className="aspect-w-4 aspect-h-3">
                   <div className="flex items-center justify-center">
                     <img
-                      src={item.node.frontmatter.logo.publicURL}
+                      src={item.node.frontmatter.logo?.publicURL}
                       alt={item.node.frontmatter.title}
                       title={item.node.frontmatter.title}
-                      className="absolute w-auto h-auto max-w-full max-h-16"
+                      className="absolute h-auto max-w-9/12"
                     />
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Members = () => {
               allMembers.length !== members.length && (
                 <button
                   onClick={() => setMembers(allMembers)}
-                  className="flex justify-center items-center text-primary bg-gradient-to-br from-transparent to-primary rounded-xl">
+                  className="flex justify-center items-center text-primary bg-primary bg-opacity-20 rounded-xl hover:shadow-xl">
                   <div className="px-4 font-bold text-2xl">
                     See all {allMembers.length}
                   </div>

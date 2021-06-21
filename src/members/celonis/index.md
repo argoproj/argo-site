@@ -1,5 +1,5 @@
 ---
 title: "Celonis"
 site: "https://celonis.com"
-logo: "nvidia.svg"
+logo: "../../images/members/celonis.svg"
 ---

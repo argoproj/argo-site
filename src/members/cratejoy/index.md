@@ -1,5 +1,5 @@
 ---
 title: "Cratejoy"
 site: "https://cratejoy.com"
-logo: "nvidia.svg"
+logo: "../../images/members/cratejoy.svg"
 ---

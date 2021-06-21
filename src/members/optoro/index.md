@@ -1,5 +1,5 @@
 ---
 title: "Optoro"
 site: "https://optoro.com"
-logo: "mlb.svg"
+logo: "../../images/members/optoro.svg"
 ---

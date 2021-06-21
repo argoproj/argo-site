@@ -1,5 +1,5 @@
 ---
 title: "Elium"
 site: "https://elium.com"
-logo: "nvidia.svg"
+logo: "../../images/members/elium.svg"
 ---

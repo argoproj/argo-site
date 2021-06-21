@@ -1,5 +1,5 @@
 ---
 title: "Energisme"
 site: "https://energisme.com"
-logo: "mlb.svg"
+logo: "../../images/members/energisme.svg"
 ---

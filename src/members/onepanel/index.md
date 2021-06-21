@@ -1,5 +1,5 @@
 ---
 title: "Onepanel"
 site: "https://docs.onepanel.ai"
-logo: "nvidia.svg"
+logo: "../../images/members/onepanel.svg"
 ---

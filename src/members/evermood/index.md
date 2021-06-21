@@ -1,5 +1,5 @@
 ---
 title: "Evermood"
 site: "https://evermood.com"
-logo: "mlb.svg"
+logo: "../../images/members/evermood.svg"
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Alibaba"
 site: "https://alibaba.com"
-logo: "alibaba.svg"
+logo: "../../images/members/alibaba.svg"
 ---

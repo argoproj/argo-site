@@ -1,5 +1,5 @@
 ---
 title: "D2IQ"
 site: "https://d2iq.com"
-logo: "nvidia.svg"
+logo: "../../images/members/d2iq.svg"
 ---

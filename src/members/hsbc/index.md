@@ -1,5 +1,5 @@
 ---
 title: "HSBC"
 site: "https://hsbc.com"
-logo: "mlb.svg"
+logo: "../../images/members/hsbc.svg"
 ---

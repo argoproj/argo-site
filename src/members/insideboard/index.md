@@ -1,5 +1,5 @@
 ---
 title: "InsideBoard"
 site: "https://insideboard.com"
-logo: "mlb.svg"
+logo: "../../images/members/insideboard.svg"
 ---

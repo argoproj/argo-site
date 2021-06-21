@@ -1,5 +1,5 @@
 ---
 title: "Tulip"
 site: "https://tulip.com"
-logo: "mlb.svg"
+logo: "../../images/members/tulip.svg"
 ---

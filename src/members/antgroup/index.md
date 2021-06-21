@@ -1,5 +1,5 @@
 ---
 title: "Antgroup"
 site: "https://antgroup.com"
-logo: "alibaba.svg"
+logo: "../../images/members/antgroup.svg"
 ---
