@@ -21,8 +21,15 @@ const Footer = () => {
         <small className="mt-4 max-w-3xl mx-auto block text-center">
           {date.getFullYear()} &copy; Argo Project Authors. All rights reserved.
           The Linux Foundation has registered trademarks and uses trademarks.
-          For a list of trademarks of The Linux Foundation, please see our
-          Trademark Usage page
+          For a list of trademarks of The Linux Foundation, please see our{" "}
+          <a
+            href="https://www.linuxfoundation.org/trademark-usage"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline">
+            Trademark Usage page
+          </a>
+          .
         </small>
       </Container>
     </footer>

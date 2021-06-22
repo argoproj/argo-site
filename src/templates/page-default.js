@@ -43,7 +43,7 @@ const PageTemplate = ({ data, location }) => {
             <GatsbyImage
               image={page.frontmatter.image.childImageSharp.gatsbyImageData}
               alt={page.frontmatter.title}
-              className="absolute -top-6 lg:-top-12 w-4/5 lg:w-3/5"
+              className="!absolute -top-6 lg:-top-12 w-4/5 lg:w-3/5"
             />
           </div>
         </Grid>

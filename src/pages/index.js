@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Grid, Container } from "../components/grid"
@@ -11,6 +10,8 @@ import Maintainers from "../components/maintainers"
 import Features from "../components/features"
 import HeroWrapper from "../components/hero-wrapper"
 import HeartIcon from "../svg/heart.svg"
+import ArgoHero from "../svg/argo-hero.svg"
+import Pipes from "../components/pipes"
 
 const IndexPage = ({ location }) => {
   const { site } = useStaticQuery(
@@ -61,14 +62,17 @@ const IndexPage = ({ location }) => {
           </div>
 
           <div className="relative z-0">
+            <Pipes className="absolute top-1/2 left-1/2 max-w-full transform -translate-x-1/2 -translate-y-1/2" />
+
             <div
               className="absolute w-full h-full transform -translate-y-64 lg:translate-y-32 translate-x-12 rounded-full filter blur-3xl opacity-30"
               style={{ background: "#280E6B" }}></div>
-            <StaticImage
+            <ArgoHero className="relative z-10 block mx-auto mt-12 w-48 lg:w-72" />
+            {/* <StaticImage
               src="../images/hero.png"
               alt="Argo"
               className="block mx-auto mt-12 w-48 lg:w-72"
-            />
+            /> */}
           </div>
         </Grid>
 
