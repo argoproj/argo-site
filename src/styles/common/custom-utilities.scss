@@ -51,9 +51,4 @@
   .nav--active {
     @apply left-0 #{!important};
   }
-
-  // Important classes
-  .\!absolute {
-    @apply absolute #{!important};
-  }
 }

@@ -9,7 +9,10 @@ module.exports = {
       padding: "1rem",
     },
     colors: {
-      primary: "#ef7b4d",
+      primary: {
+        DEFAULT: "#ef7b4d",
+        200: "rgba(239, 123, 77, 0.2)",
+      },
       dark: "#28234a",
       light: "#edf4f7",
       gray: "#524f6d",
@@ -23,6 +26,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["nunito", ...defaultTheme.fontFamily.sans],
+      },
       typography: theme => ({
         DEFAULT: {
           css: {
@@ -47,9 +53,6 @@ module.exports = {
           },
         },
       }),
-      fontFamily: {
-        sans: ["nunito", ...defaultTheme.fontFamily.sans],
-      },
       fontSize: {
         "8xl": ["5.5rem", "1"],
       },
@@ -75,6 +78,9 @@ module.exports = {
       },
       rotate: {
         "-36": "-36deg",
+      },
+      boxShadow: {
+        primary: "0 20px 50px -15px rgba(239, 123, 77, 0.3)",
       },
     },
   },

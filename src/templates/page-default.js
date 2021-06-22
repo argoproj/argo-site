@@ -45,16 +45,16 @@ const PageTemplate = ({ data, location }) => {
 
           <div className="relative flex py-24 justify-end lg:py-0 lg:justify-center lg:py-0">
             {page.frontmatter.order === 1 && (
-              <WorkflowsSvg className="!absolute -bottom-14 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <WorkflowsSvg className="absolute -bottom-14 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
             )}
             {page.frontmatter.order === 2 && (
-              <CdSvg className="!absolute -bottom-20 lg:-bottom-32 w-64 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <CdSvg className="absolute -bottom-20 lg:-bottom-32 w-64 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
             )}
             {page.frontmatter.order === 3 && (
-              <RolloutsSvg className="!absolute -bottom-14 lg:-bottom-24 w-54 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <RolloutsSvg className="absolute -bottom-14 lg:-bottom-24 w-54 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
             )}
             {page.frontmatter.order === 4 && (
-              <EventsSvg className="!absolute -bottom-10 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <EventsSvg className="absolute -bottom-10 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
             )}
           </div>
         </Grid>

@@ -1,9 +1,10 @@
 import * as React from "react"
 import { gsap } from "../plugins/gsap"
 import { DrawSVGPlugin } from "../plugins/gsap/DrawSVGPlugin"
+import { ScrollTrigger } from "../plugins/gsap/ScrollTrigger"
 import Pipeslines from "../svg/pipes.svg"
 
-gsap.registerPlugin(DrawSVGPlugin)
+gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger)
 
 const Pipes = ({ className }) => {
   const [target, setTarget] = React.useState(null)
@@ -14,8 +15,9 @@ const Pipes = ({ className }) => {
 
     if (target) {
       const items = target.querySelectorAll(".pipe")
+      const tl = gsap.timeline({ repeat: -1, paused: true })
 
-      gsap.fromTo(
+      tl.fromTo(
         items,
         {
           drawSVG: function (index) {
@@ -38,11 +40,20 @@ const Pipes = ({ className }) => {
           },
         }
       )
+
+      // Only plays when is in the viewport.
+      ScrollTrigger.create({
+        trigger: target,
+        onEnter: () => tl.play(),
+        onEnterBack: () => tl.play(),
+        onLeave: () => tl.pause(),
+        onLeaveBack: () => tl.pause(),
+      })
     }
   }, [target, targetRef])
 
   return (
-    <div ref={targetRef}>
+    <div ref={targetRef} className="absolute top-0 left-0 h-full w-full">
       <Pipeslines className={className} />
     </div>
   )

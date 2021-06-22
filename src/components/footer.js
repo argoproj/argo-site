@@ -1,19 +1,14 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-
 import { Container } from "./grid"
 import Contribute from "./contribute"
+import Mascot from "../svg/argo-mascot.svg"
 
 const Footer = () => {
   const date = new Date()
 
   return (
     <footer className="relative pt-10 pb-8 bg-gray-white border-t border-light">
-      <StaticImage
-        src="../images/argo-mascot.png"
-        alt="Argo mascot"
-        className="!absolute -top-20 inset-x-0 mx-auto h-auto w-20"
-      />
+      <Mascot className="absolute -top-20 inset-x-0 mx-auto h-auto w-20" />
 
       <Container className="text-gray">
         <Contribute color="gray" size="sm" />
