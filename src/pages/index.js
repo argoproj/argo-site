@@ -10,8 +10,8 @@ import Maintainers from "../components/maintainers"
 import Features from "../components/features"
 import HeroWrapper from "../components/hero-wrapper"
 import HeartIcon from "../svg/heart.svg"
-import ArgoHero from "../svg/argo-hero.svg"
 import Pipes from "../components/pipes"
+import HeroGraphic from "../components/hero-graphic"
 
 const IndexPage = ({ location }) => {
   const { site } = useStaticQuery(
@@ -47,7 +47,7 @@ const IndexPage = ({ location }) => {
               <span className="text-primary">Kubernetes</span>
             </h1>
 
-            <p className="pr-12 text-2xl xl:pr-36 2xl:pr-48">
+            <p className="text-2xl md:pr-12 xl:pr-36 2xl:pr-48">
               Open source tools for Kubernetes to run workflows, manage
               clusters, and do GitOps right.
             </p>
@@ -57,26 +57,22 @@ const IndexPage = ({ location }) => {
                 to={site.siteMetadata.social.github}
                 type="primary"
                 label="View on GitHub"
+                external
               />
             </div>
           </div>
 
           <div className="relative z-0">
-            <Pipes className="absolute top-1/2 left-1/2 max-w-full transform -translate-x-1/2 -translate-y-1/2" />
+            <Pipes className="absolute top-1/2 left-1/2 max-w-full transform rotate-90 -translate-x-1/2 -translate-y-1/2" />
 
             <div
               className="absolute w-full h-full transform -translate-y-64 lg:translate-y-32 translate-x-12 rounded-full filter blur-3xl opacity-30"
               style={{ background: "#280E6B" }}></div>
-            <ArgoHero className="relative z-10 block mx-auto mt-12 w-48 lg:w-72" />
-            {/* <StaticImage
-              src="../images/hero.png"
-              alt="Argo"
-              className="block mx-auto mt-12 w-48 lg:w-72"
-            /> */}
+            <HeroGraphic className="relative z-10 block mx-auto w-56 max-w-full lg:mt-12 2xl:w-72" />
           </div>
         </Grid>
 
-        <FeaturedMembers className="mt-8 md:mt-16 2xl:mt-40" />
+        <FeaturedMembers className="lg:mt-16 2xl:mt-40" />
       </HeroWrapper>
 
       <Container className="mt-12">
@@ -115,6 +111,7 @@ const IndexPage = ({ location }) => {
                 type="primary"
                 label="View on GitHub"
                 className="w-full md:w-auto"
+                external
               />
             </div>
           </div>

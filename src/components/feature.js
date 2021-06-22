@@ -1,6 +1,7 @@
 import * as React from "react"
 import classNames from "classnames"
 import { Container, Grid } from "./grid"
+import Pipes from "./pipes"
 
 const Feature = ({
   id,
@@ -13,15 +14,12 @@ const Feature = ({
   image,
 }) => {
   const sectionClasses = classNames({
-    "feature relative z-10 xl:px-24 2xl:px-40": true,
+    "feature relative z-10 overflow-hidden xl:px-24 2xl:px-40": true,
     [className]: className,
   })
 
-  // const imgClasses = classNames({
-  //   "w-full mb-10 rounded-xl lg:mb-0": true,
-  // })
-
   const imgSideClasses = classNames({
+    relative: true,
     "order-first": imgSide === "top-left",
     "order-first lg:order-last": imgSide === "top-right",
     "mt-10 lg:mt-0 lg:order-first": imgSide === "down-left",
@@ -38,7 +36,10 @@ const Feature = ({
     <section ref={elRef} id={id} className={sectionClasses}>
       <Container>
         <Grid lg={2} alignY={alignY} alignX={alignX}>
-          <div className={imgSideClasses}>{image}</div>
+          <div className={imgSideClasses}>
+            <Pipes className="absolute top-1/2 left-1/2 w-auto opacity-70 h-full transform -rotate-36 -translate-x-1/2 -translate-y-1/2 lg:h-auto lg:w-4/6" />
+            {image}
+          </div>
           <div className={contentClasses}>{children}</div>
         </Grid>
       </Container>

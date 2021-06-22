@@ -6,53 +6,43 @@ import Pipeslines from "../svg/pipes.svg"
 gsap.registerPlugin(DrawSVGPlugin)
 
 const Pipes = ({ className }) => {
-  React.useEffect(() => {
-    const tl = gsap.timeline({ repeat: -1 })
+  const [target, setTarget] = React.useState(null)
+  const targetRef = React.createRef()
 
-    tl.fromTo(
-      ".pipe",
-      {
-        drawSVG: function (index) {
-          return index % 2 === 0 ? "0% 50%" : "50% 100%"
+  React.useEffect(() => {
+    setTarget(targetRef.current)
+
+    if (target) {
+      const items = target.querySelectorAll(".pipe")
+
+      gsap.fromTo(
+        items,
+        {
+          drawSVG: function (index) {
+            return index % 2 === 0 ? "0% 60%" : "60% 100%"
+          },
+          opacity: 0,
         },
-        opacity: 0,
-      },
-      {
-        drawSVG: function (index) {
-          return index % 2 === 0 ? "100% 100%" : "0% 0%"
-        },
-        duration: 1.5,
-        ease: "none",
-        opacity: 0.7,
-        stagger: {
-          each: 0.2,
-          from: "center",
+        {
+          drawSVG: function (index) {
+            return index % 2 === 0 ? "100% 100%" : "0% 0%"
+          },
+          duration: 1.5,
+          ease: "none",
+          opacity: 0.4,
           repeat: -1,
-        },
-      }
-    )
-    // .fromTo(
-    //   ".pipe",
-    //   { drawSVG: "0 100%" },
-    //   {
-    //     drawSVG: function (index) {
-    //       console.log("🚀 ~ index", index)
-    //       return index % 2 === 0 ? "100% 100%" : "0"
-    //     },
-    //     duration: 1,
-    //     ease: "none",
-    //     yoyo: true,
-    //     stagger: {
-    //       each: 0.1,
-    //       from: "center",
-    //       repeat: -1,
-    //     },
-    //   }
-    // )
-  }, [])
+          stagger: {
+            each: 0.2,
+            from: "center",
+            repeat: -1,
+          },
+        }
+      )
+    }
+  }, [target, targetRef])
 
   return (
-    <div>
+    <div ref={targetRef}>
       <Pipeslines className={className} />
     </div>
   )
