@@ -37,7 +37,7 @@ const Feature = ({
       <Container>
         <Grid lg={2} alignY={alignY} alignX={alignX}>
           <div className={imgSideClasses}>
-            <Pipes className="absolute top-1/2 left-1/2 w-auto opacity-70 h-full transform -rotate-36 -translate-x-1/2 -translate-y-1/2 lg:h-auto lg:w-4/6" />
+            <Pipes className="absolute top-1/2 left-1/2 w-auto opacity-40 h-full transform -rotate-36 -translate-x-1/2 -translate-y-1/2 lg:h-auto lg:w-3/5" />
             {image}
           </div>
           <div className={contentClasses}>{children}</div>

@@ -35,10 +35,11 @@
       }
     }
 
-    .burger-dark {
-      .burger-lines,
-      .burger-lines::before,
-      .burger-lines::after {
+    .burger-dark,
+    .burger.open {
+      &.burger .burger-lines,
+      &.burger .burger-lines::before,
+      &.burger .burger-lines::after {
         @apply bg-dark;
       }
     }
@@ -49,6 +50,6 @@
   }
 
   .nav--active {
-    @apply left-0 #{!important};
+    @apply right-0 #{!important};
   }
 }

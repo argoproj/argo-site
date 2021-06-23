@@ -14,30 +14,20 @@ const Pipes = ({ className }) => {
     setTarget(targetRef.current)
 
     if (target) {
-      const items = target.querySelectorAll(".pipe")
-      const tl = gsap.timeline({ repeat: -1, paused: true })
+      const items = target.querySelectorAll("path")
+      const tl = gsap.timeline({ paused: true })
 
       tl.fromTo(
         items,
         {
-          drawSVG: function (index) {
-            return index % 2 === 0 ? "0% 60%" : "60% 100%"
-          },
+          drawSVG: "50% 50%",
           opacity: 0,
         },
         {
-          drawSVG: function (index) {
-            return index % 2 === 0 ? "100% 100%" : "0% 0%"
-          },
-          duration: 1.5,
-          ease: "none",
-          opacity: 0.4,
-          repeat: -1,
-          stagger: {
-            each: 0.2,
-            from: "center",
-            repeat: -1,
-          },
+          drawSVG: "100%",
+          duration: 2,
+          ease: "expo.out",
+          opacity: 0.2,
         }
       )
 

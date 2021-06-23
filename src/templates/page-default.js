@@ -21,6 +21,8 @@ const PageTemplate = ({ data, location }) => {
       <Seo
         title={page.frontmatter.title}
         description={page.frontmatter.description || "Description"}
+        url={location.href}
+        image={page.frontmatter.thumbnail.publicURL}
       />
 
       <HeroWrapper bg="light" pipes>
@@ -43,18 +45,18 @@ const PageTemplate = ({ data, location }) => {
             />
           </div>
 
-          <div className="relative flex py-24 justify-end lg:py-0 lg:justify-center lg:py-0">
+          <div className="relative flex py-24 justify-end lg:py-0 lg:justify-center">
             {page.frontmatter.order === 1 && (
-              <WorkflowsSvg className="absolute -bottom-14 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <WorkflowsSvg className="absolute -bottom-14 lg:-bottom-24 h-auto w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/6" />
             )}
             {page.frontmatter.order === 2 && (
-              <CdSvg className="absolute -bottom-20 lg:-bottom-32 w-64 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <CdSvg className="absolute -bottom-16 lg:-bottom-32 h-auto w-64 max-w-full md:w-2/5 lg:w-4/5 xl:w-3/6" />
             )}
             {page.frontmatter.order === 3 && (
-              <RolloutsSvg className="absolute -bottom-14 lg:-bottom-24 w-54 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <RolloutsSvg className="absolute -bottom-14 lg:-bottom-28 h-auto w-48 max-w-full md:w-2/5 lg:w-3/5 xl:w-2/5" />
             )}
             {page.frontmatter.order === 4 && (
-              <EventsSvg className="absolute -bottom-10 lg:-bottom-24 w-80 max-w-full md:w-3/5 lg:w-4/5 xl:w-3/5" />
+              <EventsSvg className="absolute -bottom-10 lg:-bottom-24 h-auto w-48 max-w-full md:w-2/6 lg:w-2/5 xl:w-2/6" />
             )}
           </div>
         </Grid>
@@ -107,14 +109,8 @@ export const pageQuery = graphql`
         repo
         docs
         quickstart
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 1200
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
+        thumbnail {
+          publicURL
         }
       }
     }

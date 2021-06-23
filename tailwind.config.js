@@ -26,9 +26,6 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["nunito", ...defaultTheme.fontFamily.sans],
-      },
       typography: theme => ({
         DEFAULT: {
           css: {
@@ -53,6 +50,9 @@ module.exports = {
           },
         },
       }),
+      fontFamily: {
+        sans: ["Nunito", ...defaultTheme.fontFamily.sans],
+      },
       fontSize: {
         "8xl": ["5.5rem", "1"],
       },
@@ -71,12 +71,15 @@ module.exports = {
       },
       transitionProperty: {
         left: "left",
+        right: "right",
       },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
         "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
       },
       rotate: {
+        36: "36deg",
+        89: "89deg",
         "-36": "-36deg",
       },
       boxShadow: {

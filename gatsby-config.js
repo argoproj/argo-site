@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Argo",
     description: "Open source Kubernetes native workflows, events, CI and CD",
+    siteUrl: "https://argoproj.github.io",
     social: {
       twitter: "",
       github: "https://github.com/argoproj",
@@ -39,7 +40,7 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-sitemap",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
     {

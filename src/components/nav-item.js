@@ -4,13 +4,13 @@ import classNames from "classnames"
 
 const NavItem = ({ title, url, external, color }) => {
   const linkClass = classNames({
-    "font-bold": true,
-    "text-white lg:text-dark hover:text-primary": color === "light",
-    "text-white hover:text-primary": color !== "light",
+    "lg:font-bold": true,
+    "text-dark hover:text-primary": color === "light",
+    "text-dark lg:text-white hover:text-primary": color !== "light",
   })
 
   return (
-    <li>
+    <li className="border-t border-light py-3 lg:py-0 lg:border-none">
       {external && (
         <a href={url} className={linkClass}>
           {" "}

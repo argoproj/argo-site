@@ -15,8 +15,8 @@ const HeroWrapper = ({ bg, children, pipes }) => {
       <div className={bgClass}>
         {pipes && (
           <div className="container relative h-full">
-            <div className="absolute right-12 -bottom-12 h-96 w-full transform -rotate-6 md:w-1/2 md:-bottom-12">
-              <Pipes className="absolute top-1/2 left-1/2 max-w-full opacity-50 transform -rotate-36 -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute right-12 -bottom-12 h-44 w-full md:w-1/2 md:-bottom-12">
+              <Pipes className="absolute top-1/2 left-1/2 max-w-full opacity-25 transform rotate-89 -translate-x-1/2 -translate-y-1/2" />
             </div>
           </div>
         )}

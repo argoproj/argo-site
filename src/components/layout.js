@@ -4,7 +4,6 @@ import Footer from "./footer"
 
 const Layout = ({
   location,
-  title,
   hero,
   headerColor,
   hideHeader,

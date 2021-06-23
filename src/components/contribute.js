@@ -28,7 +28,7 @@ const Contribute = ({ size, color, className }) => {
 
   const anchorClass = classNames({
     "inline-block": true,
-    "text-white": color === "white",
+    "text-dark lg:text-white": color === "white",
     "lg:text-gray": color === "gray",
     "text-dark": color === "dark",
     "text-primary": color === "primary",

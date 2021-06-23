@@ -12,6 +12,7 @@ import HeroWrapper from "../components/hero-wrapper"
 import HeartIcon from "../svg/heart.svg"
 import Pipes from "../components/pipes"
 import HeroGraphic from "../components/hero-graphic"
+import thumbnail from "../images/thumbnails/home.png"
 
 const IndexPage = ({ location }) => {
   const { site } = useStaticQuery(
@@ -36,7 +37,7 @@ const IndexPage = ({ location }) => {
         title="Home"
         description="Open source Kubernetes native workflows, events, CI and CD"
         url={location.href}
-        // image={ thumbnail }
+        image={thumbnail}
       />
 
       <HeroWrapper bg="dark">
@@ -62,13 +63,13 @@ const IndexPage = ({ location }) => {
             </div>
           </div>
 
-          <div className="relative z-0">
-            <Pipes className="absolute top-1/2 left-1/2 max-w-full transform rotate-90 -translate-x-1/2 -translate-y-1/2" />
+          <div className="relative z-0 mt-12">
+            <Pipes className="absolute top-1/2 left-1/2 w-8/12 max-w-full transform rotate-90 -translate-x-1/2 -translate-y-1/2" />
 
             <div
               className="absolute w-full h-full transform -translate-y-64 lg:translate-y-32 translate-x-12 rounded-full filter blur-3xl opacity-30"
-              style={{ background: "#280E6B" }}></div>
-            <HeroGraphic className="relative z-10 block mx-auto w-56 max-w-full lg:mt-12 2xl:w-72" />
+              style={{ background: "#280e6b" }}></div>
+            <HeroGraphic className="relative z-10 block mx-auto w-40 h-auto max-w-full lg:mt-12 lg:w-52 2xl:w-72" />
           </div>
         </Grid>
 

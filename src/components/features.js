@@ -57,7 +57,7 @@ const Features = () => {
                   item.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
                 alt={item.node.frontmatter.title}
-                className="block mx-auto h-auto w-48 lg:w-auto lg:max-w-lg"
+                className="block mx-auto h-auto w-52 lg:w-auto lg:max-w-lg"
               />
             }>
             <FeatureTitle>{item.node.frontmatter.title}</FeatureTitle>
