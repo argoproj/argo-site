@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 import Title from "./title"
-import NavToggler from "./nav-toggler"
+import NavToggler from "./ui/nav-toggler"
 import Nav from "./nav"
 import Logo from "../svg/logo.svg"
 
@@ -12,7 +12,7 @@ const Header = ({ color }) => {
   const headerClass = classNames({
     "fixed top-0 left-0 z-50 py-3 w-full backdrop-filter backdrop-blur-lg backdrop-saturate-150 lg:py-5": true,
     "bg-light bg-opacity-50": color === "light",
-    "bg-grad-from bg-opacity-90": color !== "light",
+    "bg-[#110e50] bg-opacity-90": color !== "light",
   })
 
   const logoClass = classNames({

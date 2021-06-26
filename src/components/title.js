@@ -14,7 +14,7 @@ const Title = () => {
     `
   )
 
-  return <>{site.siteMetadata.title}</>
+  return <React.Fragment>{site.siteMetadata.title}</React.Fragment>
 }
 
 export default Title

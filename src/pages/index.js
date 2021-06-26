@@ -2,16 +2,16 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { Grid, Container } from "../components/grid"
+import { Grid, Container } from "../components/ui/grid"
 import FeaturedMembers from "../components/featured-members"
-import Button from "../components/button"
+import Button from "../components/ui/button"
 import Members from "../components/members"
 import Maintainers from "../components/maintainers"
 import Features from "../components/features"
-import HeroWrapper from "../components/hero-wrapper"
+import HeroWrapper from "../components/ui/hero-wrapper"
 import HeartIcon from "../svg/heart.svg"
-import Pipes from "../components/pipes"
-import HeroGraphic from "../components/hero-graphic"
+import Pipes from "../components/ui/pipes"
+import ArgoHero from "../components/ui/argo-hero"
 import thumbnail from "../images/thumbnails/home.png"
 
 const IndexPage = ({ location }) => {
@@ -58,18 +58,13 @@ const IndexPage = ({ location }) => {
                 to={site.siteMetadata.social.github}
                 type="primary"
                 label="View on GitHub"
-                external
               />
             </div>
           </div>
 
           <div className="relative z-0 mt-12">
             <Pipes className="absolute top-1/2 left-1/2 w-8/12 max-w-full transform rotate-90 -translate-x-1/2 -translate-y-1/2" />
-
-            <div
-              className="absolute w-full h-full transform -translate-y-64 lg:translate-y-32 translate-x-12 rounded-full filter blur-3xl opacity-30"
-              style={{ background: "#280e6b" }}></div>
-            <HeroGraphic className="relative z-10 block mx-auto w-40 h-auto max-w-full lg:mt-12 lg:w-52 2xl:w-72" />
+            <ArgoHero className="relative z-10 block mx-auto w-40 h-auto max-w-full lg:mt-12 lg:w-52 2xl:w-72" />
           </div>
         </Grid>
 
@@ -87,7 +82,7 @@ const IndexPage = ({ location }) => {
       <div className="relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full max-h-none -z-1 bg-light transform -skew-y-6 origin-full-0 overflow-hidden"></div>
 
-        <Container className="section-padding-top">
+        <Container className="pt-[calc(calc(calc(100vw-0px)*0.05)+4rem)] lg:pt-[calc(calc(calc(100vw-0px)*0.05)+9rem)]">
           <h2 className="text-center">
             Join the growing <span className="text-primary">community</span>
           </h2>
@@ -112,7 +107,6 @@ const IndexPage = ({ location }) => {
                 type="primary"
                 label="View on GitHub"
                 className="w-full md:w-auto"
-                external
               />
             </div>
           </div>

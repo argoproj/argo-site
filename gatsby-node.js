@@ -26,14 +26,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       query {
-        allMdx(filter: { fileAbsolutePath: { regex: "/(features)/" } }) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-            }
+        allMdx(filter: { fileAbsolutePath: { regex: "/(content/pages)/" } }) {
+          nodes {
+            id
+            slug
           }
         }
       }
@@ -44,18 +40,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
   }
 
-  const pages = result.data.allMdx.edges
+  const pages = result.data.allMdx.nodes
 
   // Create pages
   // But only if there's at least one Page
   // `context` is available in the template as a prop and as a variable in GraphQL
   if (pages.length > 0) {
-    pages.forEach(({ node }) => {
+    pages.forEach(page => {
       createPage({
-        path: node.fields.slug,
+        path: page.slug,
         component: pageDefault,
         context: {
-          id: node.id,
+          id: page.id,
         },
       })
     })

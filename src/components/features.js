@@ -1,19 +1,16 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-
-import Feature from "../components/feature"
-import FeatureTitle from "../components/feature-title"
-import FeatureDescription from "../components/feature-description"
-import Stargazers from "../components/stargazers"
-import Button from "../components/button"
+import FeatureItem from "../components/ui/feature-item"
+import Stargazers from "../components/ui/stargazers"
+import Button from "../components/ui/button"
 
 const Features = () => {
   const query = useStaticQuery(
     graphql`
       query {
         allMdx(
-          filter: { fileAbsolutePath: { regex: "/(features)/" } }
+          filter: { fileAbsolutePath: { regex: "/(content/pages)/" } }
           sort: { order: ASC, fields: frontmatter___order }
         ) {
           edges {
@@ -28,7 +25,7 @@ const Features = () => {
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 1200
+                      width: 850
                       placeholder: BLURRED
                       formats: [AUTO, WEBP, AVIF]
                     )
@@ -43,10 +40,10 @@ const Features = () => {
   )
 
   return (
-    <>
+    <React.Fragment>
       {query.allMdx.edges.map((item, index) => {
         return (
-          <Feature
+          <FeatureItem
             key={item.node.frontmatter.title}
             alignY="center"
             className="my-12 text-center lg:my-0 lg:text-left"
@@ -54,22 +51,24 @@ const Features = () => {
             image={
               <GatsbyImage
                 image={
-                  item.node.frontmatter.image.childImageSharp.gatsbyImageData
+                  item.node.frontmatter?.image.childImageSharp.gatsbyImageData
                 }
-                alt={item.node.frontmatter.title}
+                alt={item.node.frontmatter?.title}
                 className="block mx-auto h-auto w-52 lg:w-auto lg:max-w-lg"
               />
             }>
-            <FeatureTitle>{item.node.frontmatter.title}</FeatureTitle>
+            <h3 className="text-4xl md:text-6xl">
+              {item.node.frontmatter?.title}
+            </h3>
 
             <Stargazers
-              repo={item.node.frontmatter.repo}
+              repo={item.node.frontmatter?.repo}
               className="mb-4 md:mb-8"
             />
 
-            <FeatureDescription>
-              {item.node.frontmatter.description}
-            </FeatureDescription>
+            <p className="text-lg lg:text-2xl">
+              {item.node.frontmatter?.description}
+            </p>
 
             <Button
               to={item.node?.fields?.slug}
@@ -77,10 +76,10 @@ const Features = () => {
               label="Learn More"
               className="mt-8"
             />
-          </Feature>
+          </FeatureItem>
         )
       })}
-    </>
+    </React.Fragment>
   )
 }
 

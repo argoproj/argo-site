@@ -12,27 +12,22 @@ module.exports = {
       {
         title: "Workflows",
         url: "/workflows",
-        external: false,
       },
       {
         title: "ArgoCD",
         url: "/gitops-cd",
-        external: false,
       },
       {
         title: "Rollouts",
         url: "/rollouts",
-        external: false,
       },
       {
         title: "Events",
         url: "/events",
-        external: false,
       },
       {
         title: "Blog",
         url: "https://blog.argoproj.io",
-        external: true,
       },
     ],
   },
@@ -87,34 +82,26 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "content-pages",
+        path: "./content/pages/",
       },
-      __key: "pages",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "features",
-        path: "./src/features/",
-      },
-      __key: "features",
+      __key: "content-pages",
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "members",
-        path: "./src/members/",
+        path: "./content/members/",
       },
       __key: "members",
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "maintainers",
-        path: "./src/maintainers/",
+        name: "pages",
+        path: "./src/pages/",
       },
-      __key: "maintainers",
+      __key: "pages",
     },
   ],
 }

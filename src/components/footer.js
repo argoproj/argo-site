@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Container } from "./grid"
+import { Container } from "./ui/grid"
 import Contribute from "./contribute"
 import Mascot from "../svg/argo-mascot.svg"
 

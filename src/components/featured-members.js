@@ -1,6 +1,5 @@
 import * as React from "react"
 import classNames from "classnames"
-
 import Adobe from "../svg/featured/adobe.svg"
 import Nvidia from "../svg/featured/nvidia.svg"
 import Tesla from "../svg/featured/tesla.svg"

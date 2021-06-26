@@ -1,20 +1,23 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { Container, Grid } from "../components/grid"
-import Button from "../components/button"
-import HeroWrapper from "../components/hero-wrapper"
-import Stargazers from "../components/stargazers"
+import { Container, Grid } from "../components/ui/grid"
+import Button from "../components/ui/button"
+import HeroWrapper from "../components/ui/hero-wrapper"
+import Stargazers from "../components/ui/stargazers"
 import WorkflowsSvg from "../svg/workflows.svg"
 import EventsSvg from "../svg/events.svg"
 import RolloutsSvg from "../svg/rollouts.svg"
 import CdSvg from "../svg/gitops-cd.svg"
+import YoutubeEmbed from "../components/ui/youtube-embed"
 
 const PageTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || "Title"
   const page = data.mdx
+  const shortcodes = { Link, YoutubeEmbed }
 
   return (
     <Layout location={location} title={siteTitle} headerColor="light">
@@ -41,7 +44,6 @@ const PageTemplate = ({ data, location }) => {
               type="primary"
               label="Documentation"
               className="mb-8 mt-8"
-              external
             />
           </div>
 
@@ -67,15 +69,16 @@ const PageTemplate = ({ data, location }) => {
           <Stargazers repo={page.frontmatter.repo} />
         </div>
 
-        <MDXRenderer>{page.body}</MDXRenderer>
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{page.body}</MDXRenderer>
+        </MDXProvider>
 
-        <div className="mt-6 text-center space-y-4 md:space-x-4 md:space-y-0 no-prose">
+        <div className="mt-6 text-center space-y-4 md:space-x-4 md:space-y-0">
           <Button
             to={page.frontmatter?.docs}
             type="primary"
             label="View Docs"
             className="w-full mt-8 md:w-auto"
-            external
           />
 
           <Button
@@ -83,7 +86,6 @@ const PageTemplate = ({ data, location }) => {
             type="secondary"
             label="Get Started"
             className="w-full mt-8 md:w-auto"
-            external
           />
         </div>
       </Container>
