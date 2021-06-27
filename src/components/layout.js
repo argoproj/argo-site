@@ -20,7 +20,7 @@ const Layout = ({
 
       {!hideHeader && <Header color={headerColor} />}
 
-      <main>
+      <main id="main">
         {hero}
         {children}
       </main>

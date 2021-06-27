@@ -38,7 +38,6 @@ const Stargazers = ({ repo, className }) => {
         <a
           href={url}
           aria-label="github"
-          target="_blank"
           rel="noopener noreferrer"
           title="Follow us on GitHub"
           className="stargazers inline-block">
