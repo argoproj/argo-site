@@ -14,8 +14,8 @@ module.exports = {
         url: "/workflows",
       },
       {
-        title: "ArgoCD",
-        url: "/gitops-cd",
+        title: "CD",
+        url: "/cd",
       },
       {
         title: "Rollouts",

@@ -17,7 +17,7 @@ const FeaturedMembers = ({ className }) => {
   return (
     <div className={wrapperClass}>
       <p className="mb-8 text-center text-primary font-bold">
-        We are trusted by the best in the world
+        Trusted by
       </p>
 
       <div className="flex flex-wrap items-center justify-center">
