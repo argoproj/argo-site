@@ -70,6 +70,7 @@ trak.fynd.com
 tru.id
 tulip.com
 ub.io
+upbound.io
 visits.world
 vshn.ch
 wellcome.ac.uk
