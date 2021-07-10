@@ -1,7 +1,7 @@
 import * as React from "react"
-import { gsap } from "../../plugins/gsap"
+import { gsap } from "gsap"
 import { DrawSVGPlugin } from "../../plugins/gsap/DrawSVGPlugin"
-import { ScrollTrigger } from "../../plugins/gsap/ScrollTrigger"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Pipeslines from "../../svg/pipes.svg"
 
 gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger)
