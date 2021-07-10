@@ -1,7 +1,7 @@
 import React from "react"
 import { isMobile } from "react-device-detect"
-import { gsap } from "../../plugins/gsap"
-import { ScrollTrigger } from "../../plugins/gsap/ScrollTrigger"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import ArgoHero from "../../svg/argo-hero.svg"
 
 gsap.registerPlugin(ScrollTrigger)
