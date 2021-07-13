@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - 'master'
 
 jobs:
   deploy:
@@ -24,6 +27,7 @@ jobs:
         run: |
           yarn build
       - name: deploy
+        if: ${{ github.event_name == 'push' }}
         uses: peaceiris/actions-gh-pages@v2.5.0
         env:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
