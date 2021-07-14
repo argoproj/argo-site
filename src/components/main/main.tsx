@@ -55,7 +55,8 @@ export class Main extends React.Component<{transparentHeader?: boolean}, {showNa
                 <div className={classNames('main__header', {solid: !this.props.transparentHeader || this.state.scrolled})}>
                     <div className='main__container'>
                         <div className='main__logo' onClick={() => push('/')}>
-                            <div className='main__logo-text'>{logoTextSvg}</div>
+                            <div className='main__logo-text'>{logoTextSvg}
+                            </div>
                         </div>
                         <div className={classNames('main__header-nav', {show: this.state.showNav})}>
                             {Object.keys(PROJECTS).map((proj) => ({proj, info: PROJECTS[proj]})).map(({proj, info}) => (
