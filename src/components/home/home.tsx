@@ -4,7 +4,8 @@ import * as React from 'react';
 import { PROJECTS } from '../projects';
 
 const argoWheelImg = require('../../assets/images/argo-wheel.png');
-
+const intuitImg = require('../../assets/images/logos/intuit.png');
+const intuitUrl = 'https://www.intuit.com/';
 require('./home.scss');
 
 const data: string = require('raw-loader!../../assets/clearbit-logos.txt');
@@ -55,6 +56,19 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className='main__container'>
+                <div className='home__intuit'>
+                    <h3>CREATED BY</h3>
+
+                    <div className='home__intuitbox'>
+                        <div className='home__community-logos'>
+                            <a href={intuitUrl} target='_blank'>
+                                <img src={intuitImg} alt={intuitUrl}/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className='main__container'>
                 <div className='home__community'>
                     <div className='title'>Join the growing community</div>
