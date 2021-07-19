@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import classNames from "classnames"
 import GithubIcon from "../svg/github.svg"
 import SlackIcon from "../svg/slack.svg"
@@ -13,7 +13,6 @@ const Contribute = ({ size, color, className }) => {
             social {
               twitter
               github
-              slack
             }
           }
         }
@@ -53,15 +52,9 @@ const Contribute = ({ size, color, className }) => {
         <GithubIcon className={iconClass} />
       </a>
 
-      <a
-        href={site.siteMetadata.social.slack}
-        aria-label="slack"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Join our Slack channel"
-        className={anchorClass}>
+      <Link to='/community/join-slack' className={anchorClass} activeClassName="!text-primary">
         <SlackIcon className={iconClass} />
-      </a>
+      </Link>
     </div>
   )
 }

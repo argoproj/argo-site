@@ -23,7 +23,6 @@ const IndexPage = ({ location }) => {
             social {
               twitter
               github
-              slack
             }
           }
         }
