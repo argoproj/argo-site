@@ -6,7 +6,19 @@ module.exports = {
     social: {
       twitter: "",
       github: "https://github.com/argoproj",
-      slack: "https://argoproj.github.io/community/join-slack",
+      slack: {
+        cncfLink: "https://slack.cncf.io/",
+        channels: [
+          {name: "argo-workflows", link: "https://cloud-native.slack.com/archives/C01QW9QSSSK"},
+          {name: "argo-cd", link: "https://cloud-native.slack.com/archives/C01TSERG0KZ"},
+          {name: "argo-rollouts", link: "https://cloud-native.slack.com/archives/C01U781DW2E"},
+          {name: "argo-events", link: "https://cloud-native.slack.com/archives/C01TNKD6KL6"},
+          {name: "argo-cd-notifications", link: "https://cloud-native.slack.com/archives/C01UKS2NKK3"},
+          {name: "argo-cd-appset", link: "https://cloud-native.slack.com/archives/C01U45M2SVB"},
+          {name: "argo-sig-ui", link: "https://cloud-native.slack.com/archives/C01TR44A8NB"},
+          {name: "argo-cd-autopilot", link: "https://cloud-native.slack.com/archives/C0207C47D0X"},
+        ]
+      }
     },
     navigation: [
       {
