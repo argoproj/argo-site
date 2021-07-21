@@ -13,6 +13,7 @@ import HeartIcon from "../svg/heart.svg"
 import Pipes from "../components/ui/pipes"
 import ArgoHero from "../components/ui/argo-hero"
 import thumbnail from "../images/thumbnails/home.png"
+import Intuit from "../svg/featured/intuit.svg"
 
 const IndexPage = ({ location }) => {
   const { site } = useStaticQuery(
@@ -90,6 +91,14 @@ const IndexPage = ({ location }) => {
             <Grid xs={2} sm={3} lg={4} xl={6}>
               <Members />
             </Grid>
+          </div>
+
+          <h2 className="text-2xl text-center">
+            Created by
+          </h2>
+
+          <div className="flex flex-wrap items-center justify-center">
+            <Intuit className="h-12 w-auto mb-8 mx-4 md:mx-7" />
           </div>
 
           <h2 className="text-2xl text-center">
