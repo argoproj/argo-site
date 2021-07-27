@@ -10,9 +10,9 @@ const Header = ({ color }) => {
   const [isNavOpen, setisNavOpen] = React.useState(false)
 
   const headerClass = classNames({
-    "fixed top-0 left-0 z-50 py-3 w-full backdrop-filter backdrop-blur-lg backdrop-saturate-150 lg:py-5": true,
-    "bg-light bg-opacity-50": color === "light",
-    "bg-[#110e50] bg-opacity-90": color !== "light",
+    "sticky -top-1 left-0 z-50 py-3 w-full backdrop-filter backdrop-blur-lg backdrop-saturate-150 lg:py-5": true,
+    "bg-light": color === "light",
+    "bg-[#110e50]": color !== "light",
   })
 
   const logoClass = classNames({
@@ -22,25 +22,42 @@ const Header = ({ color }) => {
   })
 
   return (
-    <header className={headerClass}>
-      <div className="container flex items-center">
-        <Link to="/">
-          <span className="sr-only">
-            <Title />
-          </span>
 
-          <Logo className={logoClass} />
-        </Link>
+    <React.Fragment>
 
-        <Nav isOpen={isNavOpen} color={color} />
-
-        <NavToggler
-          onClick={() => setisNavOpen(!isNavOpen)}
-          isOpen={isNavOpen}
-          color={color}
-        />
+      <div className="announcement-banner bg-[#302871] py-3">
+        <a href="https://argoproj.github.io/argocon21/">
+          Join us for the hottest new conference at Argocon '21 in San Francisco on Dec 8th
+          <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+            <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+            </g>
+          </svg>
+        </a>
       </div>
-    </header>
+
+      <header className={headerClass}>
+        <div className="container flex items-center">
+          <Link to="/">
+            <span className="sr-only">
+              <Title />
+            </span>
+
+            <Logo className={logoClass} />
+          </Link>
+
+          <Nav isOpen={isNavOpen} color={color} />
+
+          <NavToggler
+            onClick={() => setisNavOpen(!isNavOpen)}
+            isOpen={isNavOpen}
+            color={color}
+          />
+        </div>
+      </header>
+
+    </React.Fragment>
   )
 }
 
