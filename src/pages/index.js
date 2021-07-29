@@ -98,7 +98,7 @@ const IndexPage = ({ location }) => {
           </h2>
 
           <div className="flex flex-wrap items-center justify-center">
-            <Intuit className="h-12 w-auto mb-8 mx-4 md:mx-7" />
+            <Intuit className="h-8 w-auto mb-8 mx-4 md:mx-7" />
           </div>
 
           <h2 className="text-2xl text-center">
