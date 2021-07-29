@@ -108,7 +108,13 @@ const IndexPage = ({ location }) => {
 
           <div className="pt-4 pb-40 lg:pb-48">
             <Maintainers />
-
+            <p className="text-center">
+            <a
+              href="/community/join-slack"
+              className="underline">
+              Contact us
+            </a>
+              &nbsp;to learn more about corporate maintainers.</p>
             <div className="mt-8 space-y-4 text-center md:space-x-4 md:space-y-0">
               <Button
                 to={site.siteMetadata.social.github}
