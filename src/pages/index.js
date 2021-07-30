@@ -13,6 +13,7 @@ import HeartIcon from "../svg/heart.svg"
 import Pipes from "../components/ui/pipes"
 import ArgoHero from "../components/ui/argo-hero"
 import thumbnail from "../images/thumbnails/home.png"
+import Intuit from "../svg/featured/intuit.svg"
 
 const IndexPage = ({ location }) => {
   const { site } = useStaticQuery(
@@ -93,13 +94,27 @@ const IndexPage = ({ location }) => {
           </div>
 
           <h2 className="text-2xl text-center">
+            Created by
+          </h2>
+
+          <div className="flex flex-wrap items-center justify-center">
+            <Intuit className="h-8 w-auto mb-8 mx-4 md:mx-7" />
+          </div>
+
+          <h2 className="text-2xl text-center">
             Maintained with{" "}
             <HeartIcon className="inline-block -mt-px text-primary" /> by:
           </h2>
 
           <div className="pt-4 pb-40 lg:pb-48">
             <Maintainers />
-
+            <p className="text-center">
+            <a
+              href="/community/join-slack"
+              className="underline">
+              Contact us
+            </a>
+              &nbsp;to learn more about corporate maintainers.</p>
             <div className="mt-8 space-y-4 text-center md:space-x-4 md:space-y-0">
               <Button
                 to={site.siteMetadata.social.github}

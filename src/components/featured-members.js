@@ -7,7 +7,6 @@ import Google from "../svg/featured/google.svg"
 import Redhat from "../svg/featured/redhat.svg"
 import Wordpress from "../svg/featured/wordpress.svg"
 import Ticketmaster from "../svg/featured/ticketmaster.svg"
-import Intuit from "../svg/featured/intuit.svg"
 
 const FeaturedMembers = ({ className }) => {
   const wrapperClass = classNames({
@@ -17,14 +16,6 @@ const FeaturedMembers = ({ className }) => {
 
   return (
     <div className={wrapperClass}>
-
-      <p className="mb-8 text-center text-primary font-bold">
-        Created by
-      </p>
-
-      <div className="flex flex-wrap items-center justify-center">
-        <Intuit className="h-12 w-auto mb-8 mx-4 md:mx-7" />
-      </div>
 
       <p className="mb-8 text-center text-primary font-bold">
         Trusted by
