@@ -17,6 +17,7 @@ module.exports = {
           {name: "argo-cd-appset", link: "https://cloud-native.slack.com/archives/C01U45M2SVB"},
           {name: "argo-sig-ui", link: "https://cloud-native.slack.com/archives/C01TR44A8NB"},
           {name: "argo-cd-autopilot", link: "https://cloud-native.slack.com/archives/C0207C47D0X"},
+          {name: "argo-cd-image-updater", link: "https://cloud-native.slack.com/archives/C0296T47CHY"},
         ]
       }
     },
