@@ -9,7 +9,7 @@ const Maintainers = () => {
         allMarkdownRemark(
           filter: {
             fileAbsolutePath: {
-              regex: "/(members/codefresh|intuit|blackrock|redhat)/"
+              regex: "/(members/codefresh|intuit|blackrock|redhat|akuity)/"
             }
           }
           sort: { order: ASC, fields: frontmatter___title }
