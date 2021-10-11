@@ -27,7 +27,7 @@ const Header = ({ color }) => {
 
       <div className="announcement-banner bg-[#302871] py-3">
         <a href="https://argoproj.github.io/argocon21/">
-          Join us at ArgoCon '21 in San Francisco on Dec 8th
+          Join us at ArgoCon '21 virtually on Dec 8th
           <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <g fill-rule="evenodd">
             <path class="HoverArrow__linePath" d="M0 5h7"></path>
