@@ -18,6 +18,9 @@ module.exports = {
           {name: "argo-sig-ui", link: "https://cloud-native.slack.com/archives/C01TR44A8NB"},
           {name: "argo-cd-autopilot", link: "https://cloud-native.slack.com/archives/C0207C47D0X"},
           {name: "argo-cd-image-updater", link: "https://cloud-native.slack.com/archives/C0296T47CHY"},
+          {name: "argo-contributors", link: "https://app.slack.com/client/T08PSQ7BQ/C020XM04CUW"},
+          {name: "argo-announcements", link: "https://app.slack.com/client/T08PSQ7BQ/C02165G1L48"},
+          {name: "argo-helm-charts", link: "https://app.slack.com/client/T08PSQ7BQ/C02097VUKUM"},
         ]
       }
     },
