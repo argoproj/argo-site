@@ -15,7 +15,7 @@ const Layout = ({
   const isRootPath = location.pathname === rootPath
 
   return (
-    <div data-is-root-path={isRootPath}>
+    <div data-is-root-path={isRootPath} className="overflow-x-hidden">
       <SkipToContent />
 
       {!hideHeader && <Header color={headerColor} />}
