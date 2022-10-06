@@ -1,6 +1,6 @@
 # Argo website
 
-Repository for argo website: http://argoproj.io/ .
+Repository for Argo website at [argoproj.io](https://argoproj.io).
 
 ## Run and deploy
 
