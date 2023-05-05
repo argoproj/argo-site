@@ -26,8 +26,8 @@ const Header = ({ color }) => {
     <React.Fragment>
 
       <div className="announcement-banner bg-[#302871] py-3">
-        <a href="https://colocatedeventseu2023.sched.com/overview/type/ArgoCon">
-          ArgoCon comes to Europe as a KubeCon 2023 co-located event! Full schedule available.
+        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/co-located-events/argocon/">
+          ArgoCon 23 EU is a wrap. View recordings and presentations here.
           <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <g fill-rule="evenodd">
             <path class="HoverArrow__linePath" d="M0 5h7"></path>
