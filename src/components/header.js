@@ -26,8 +26,8 @@ const Header = ({ color }) => {
     <React.Fragment>
 
       <div className="announcement-banner bg-[#302871] py-3">
-        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/co-located-events/argocon/">
-          ArgoCon 23 EU is a wrap. View recordings and presentations here.
+        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/co-located-events/argocon/">
+          ArgoCon NA 2023 is now a co-located event at KubeCon/CloudNativeCon 2023 Chicago. CFP is now open!
           <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <g fill-rule="evenodd">
             <path class="HoverArrow__linePath" d="M0 5h7"></path>
