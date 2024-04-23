@@ -42,8 +42,8 @@ const Trainings = ({ location }) => {
         image={thumbnail}
         />
         <div className="bg-light">
-        <Container className="pt-[calc(calc(calc(100vw-0px)*0.05)+4rem)] pb-[calc(calc(calc(100vw-0px)*0.05)+4rem)] lg:pt-[calc(calc(calc(100vw-0px)*0.05)+9rem)]">
-        <h2 className="text-center">
+        <Container className="pt-20">
+        <h2 className="text-center lg:text-left">
             Trainings & Certifications
         </h2>
         <div className="pt-4 pb-24 md:pb-32 md:pt-10">
