@@ -12,12 +12,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 19.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - name: Setup Node
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
-          node-version: 19.x
-      - uses: actions/cache@v1
+          node-version: 22.x
+      - uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
         with:
           path: node_modules
           key: ${{ runner.os }}-go-dep-${{ hashFiles('**/yarn.lock') }}
