@@ -6,9 +6,9 @@ const Members = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/(content/members)/" } }
-          sort: { order: ASC, fields: frontmatter___title }
+        allMdx(
+          filter: { internal: { contentFilePath: { regex: "/(content/members)/" } } }
+          sort: { frontmatter: { title: ASC } }
         ) {
           edges {
             node {
@@ -26,7 +26,7 @@ const Members = () => {
     `
   )
 
-  const allMembers = query.allMarkdownRemark.edges
+  const allMembers = query.allMdx.edges
   const [members, setMembers] = React.useState(allMembers.slice(0, 23))
 
   return (

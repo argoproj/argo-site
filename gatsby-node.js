@@ -26,10 +26,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       query {
-        allMdx(filter: { fileAbsolutePath: { regex: "/(content/pages)/" } }) {
+        allMdx(filter: { internal: { contentFilePath: { regex: "/(content/pages)/" } } }) {
           nodes {
             id
-            slug
+            fields {
+              slug
+            }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
@@ -48,8 +53,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (pages.length > 0) {
     pages.forEach(page => {
       createPage({
-        path: page.slug,
-        component: pageDefault,
+        path: page.fields.slug,
+        component: `${pageDefault}?__contentFilePath=${page.internal.contentFilePath}`,
         context: {
           id: page.id,
         },
