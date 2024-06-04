@@ -28,9 +28,9 @@ jobs:
           yarn build
       - name: deploy
         if: ${{ github.event_name == 'push' }}
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
-          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-          EXTERNAL_REPOSITORY: argoproj/argoproj.github.io
-          PUBLISH_BRANCH: master
-          PUBLISH_DIR: ./public
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository: argoproj/argoproj.github.io
+          publish_branch: master
+          publish_dir: ./public
