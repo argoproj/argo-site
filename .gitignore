@@ -1,11 +1,4 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+.idea
 node_modules
-# Build directory
-.DS_Store
-yarn-error.log
-.tmp
-.vscode/
-.cache/
 public
-.DS_Store
