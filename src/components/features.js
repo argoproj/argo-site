@@ -10,8 +10,8 @@ const Features = () => {
     graphql`
       query {
         allMdx(
-          filter: { fileAbsolutePath: { regex: "/(content/pages)/" } }
-          sort: { order: ASC, fields: frontmatter___order }
+          filter: { internal: { contentFilePath: { regex: "/(content/pages)/" } } }
+          sort: { frontmatter: { order: ASC } }
         ) {
           edges {
             node {
@@ -25,8 +25,8 @@ const Features = () => {
                 image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 850
-                      placeholder: BLURRED
+                      width: 850,
+                      placeholder: BLURRED,
                       formats: [AUTO, WEBP, AVIF]
                     )
                   }

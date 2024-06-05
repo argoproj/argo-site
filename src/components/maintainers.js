@@ -6,13 +6,15 @@ const Maintainers = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(
+        allMdx(
           filter: {
-            fileAbsolutePath: {
-              regex: "/(members/codefresh|intuit|blackrock|redhat|akuity)/"
+            internal: {
+              contentFilePath: {
+                regex: "/(members/codefresh|intuit|blackrock|redhat|akuity)/"
+              }
             }
           }
-          sort: { order: ASC, fields: frontmatter___title }
+          sort: { frontmatter: { title: ASC } }
         ) {
           edges {
             node {
@@ -32,7 +34,7 @@ const Maintainers = () => {
 
   return (
     <div className="flex flex-wrap justify-center -mx-1">
-      {query.allMarkdownRemark.edges.map(item => {
+      {query.allMdx.edges.map(item => {
         return (
           <div
             className="w-1/2 py-1 px-1 lg:w-1/6"
