@@ -10,9 +10,9 @@ const Trainings = ({ location }) => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/(content/trainings)/" } }
-          sort: { order: ASC, fields: frontmatter___title }
+        allMdx(
+          filter: {internal: {contentFilePath: {regex: "/(content/trainings)/"}}}
+          sort: {frontmatter: {title: ASC}}
         ) {
           edges {
             node {
@@ -30,7 +30,7 @@ const Trainings = ({ location }) => {
     `
   )
 
-  const allTrainings = query.allMarkdownRemark.edges
+  const allTrainings = query.allMdx.edges
   const [trainings, setTrainings] = React.useState(allTrainings.slice(0, 23))
 
   return (
