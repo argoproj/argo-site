@@ -10,7 +10,7 @@ const Maintainers = () => {
           filter: {
             internal: {
               contentFilePath: {
-                regex: "/(members/codefresh|intuit|blackrock|redhat|akuity)/"
+                regex: "/(members/codefresh|intuit|blackrock|redhat|akuity|pipekit)/"
               }
             }
           }
