@@ -1,6 +1,5 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -14,7 +13,7 @@ import RolloutsSvg from "../svg/rollouts.svg"
 import CdSvg from "../svg/gitops-cd.svg"
 import YoutubeEmbed from "../components/ui/youtube-embed"
 
-const PageTemplate = ({ data, location }) => {
+const PageTemplate = ({ data, location, children }) => {
   const siteTitle = data.site.siteMetadata?.title || "Title"
   const page = data.mdx
   const shortcodes = { Link, YoutubeEmbed }
@@ -70,7 +69,7 @@ const PageTemplate = ({ data, location }) => {
         </div>
 
         <MDXProvider components={shortcodes}>
-          <MDXRenderer>{page.body}</MDXRenderer>
+          {children}
         </MDXProvider>
 
         <div className="mt-6 text-center space-y-4 md:space-x-4 md:space-y-0">
@@ -103,7 +102,6 @@ export const pageQuery = graphql`
       }
     }
     mdx(id: { eq: $id }) {
-      body
       frontmatter {
         order
         title

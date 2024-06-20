@@ -42,13 +42,16 @@ module.exports = {
         url: "/events",
       },
       {
+        title: "Trainings",
+        url: "/trainings",
+      },
+      {
         title: "Blog",
         url: "https://blog.argoproj.io",
       },
     ],
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -122,6 +125,14 @@ module.exports = {
         path: "./content/members/",
       },
       __key: "members",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "trainings",
+        path: "./content/trainings/",
+      },
+      __key: "trainings",
     },
     {
       resolve: "gatsby-source-filesystem",
