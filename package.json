@@ -18,7 +18,7 @@
     "@animated-burgers/burger-squeeze": "^1.1.2",
     "@mdx-js/mdx": "^2.0.0",
     "@mdx-js/react": "^2.0.0",
-    "axios": "^0.28.0",
+    "axios": "^1.8.2",
     "body-scroll-lock": "^3.1.5",
     "classnames": "^2.3.1",
     "gatsby": "^5.0.0",
