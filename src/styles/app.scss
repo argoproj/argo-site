@@ -1,0 +1,27 @@
+@import "mixins";
+
+@include fontFace("Nunito", "../../static/fonts/nunito-800", 800);
+@include fontFace("Nunito", "../../static/fonts/nunito-400", 400);
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Announcement Banner */
+
+.announcement-banner {
+  text-align: center;
+}
+
+.announcement-banner svg {
+  display: inline-block;
+  margin-left: .25em;
+}
+
+.announcement-banner a {
+  color: #ffffff;
+}
+
+.announcement-banner svg {
+  fill: #ffffff;
+}

@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - 'master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - name: Setup Node
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version: 22.x
+      - uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-go-dep-${{ hashFiles('**/yarn.lock') }}
+      - name: dependencies
+        run: yarn install
+      - name: build
+        run: |
+          yarn build
+      - name: deploy
+        if: ${{ github.event_name == 'push' }}
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository: argoproj/argoproj.github.io
+          publish_branch: master
+          publish_dir: ./public
