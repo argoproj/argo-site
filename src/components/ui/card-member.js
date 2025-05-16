@@ -14,7 +14,7 @@ const CardMember = ({ to, logoSrc, title }) => {
               src={logoSrc}
               alt={title}
               title={title}
-              className="absolute h-auto max-w-9/12"
+              className="absolute h-auto max-w-9/12 max-h-[75%]"
             />
           </div>
         </div>
