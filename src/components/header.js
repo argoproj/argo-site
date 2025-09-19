@@ -26,8 +26,8 @@ const Header = ({ color }) => {
     <React.Fragment>
 
       <div className="announcement-banner bg-[#302871] py-3">
-        <a href="https://www.youtube.com/playlist?list=PLj6h78yzYM2N9MWCsU_4upn64NDtHGv6i">
-          ArgoCon EU 2025 Is a Wrap, watch the talks on Youtube.
+        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/register/?utm_source=www&utm_medium=homepage&utm_campaign=KubeCon-NA-2025&utm_content=hero&__hstc=60185074.145646950a698139b7b465642736ec01.1712696712042.1756148082646.1756153413296.93&__hssc=60185074.4.1756153413296&__hsfp=501937303">
+          Meet us in Atlanta for KubeCon + CloudNativeCon North America · Nov 10-13 · Register Today!
           <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <g fill-rule="evenodd">
             <path class="HoverArrow__linePath" d="M0 5h7"></path>
