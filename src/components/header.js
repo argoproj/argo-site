@@ -26,7 +26,7 @@ const Header = ({ color }) => {
     <React.Fragment>
 
       <div className="announcement-banner bg-[#302871] py-3">
-        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/register/?utm_source=argoproj&utm_medium=homepage&utm_campaign=10608228-KubeCon-NA-2025&utm_content=hero">
+        <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/register/?utm_source=argoproj&utm_medium=homepage&utm_campaign=18269725-KubeCon-EU-2026&utm_content=hero">
           Join us at ArgoCon Amsterdam 2026, colocated with KubeCon EU 2026 · March 23-26 · Register Today!
           <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
             <g fill-rule="evenodd">
