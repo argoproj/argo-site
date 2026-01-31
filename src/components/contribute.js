@@ -52,7 +52,7 @@ const Contribute = ({ size, color, className }) => {
         <GithubIcon className={iconClass} />
       </a>
 
-      <Link to='/community/join-slack' className={anchorClass} activeClassName="!text-primary">
+      <Link to='/community/join-slack' className={anchorClass} activeClassName="!text-primary" aria-label="Slack">
         <SlackIcon className={iconClass} />
       </Link>
     </div>
