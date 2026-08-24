@@ -6,7 +6,6 @@ function redirectHtml({ title, url }) {
   <meta http-equiv="refresh" content="0; url=${url}">
   <link rel="canonical" href="${url}">
   <title>${title} - Argo Documentation</title>
-  <script>window.location.replace(${JSON.stringify(url)})</script>
 </head>
 <body>
   <p>Redirecting to <a href="${url}">${title} documentation</a>…</p>
