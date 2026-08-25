@@ -1,12 +1,29 @@
 # Argo website
 
-Repository for Argo website at [argoproj.io](https://argoproj.io).
+Source for the Argo **landing site** (Gatsby, MDX in [`content/pages/`](content/pages/)).
 
-## Run and deploy
+- **[argoproj.github.io](https://argoproj.github.io)** — built and deployed from this repo.
+- **[argoproj.io](https://argoproj.io)** — redirects to argoproj.github.io.
 
-* Install nodejs, yarn
-* Run `yarn install`
-* Start local dev server using `yarn start` and check web site at http://localhost:8000
+Product docs (Argo CD, Workflows, Rollouts, Events) are external sites hosted by ReadTheDocs.
 
-* To push changes to http://argoproj.io/ make sure you have write access to `https://github.com/argoproj/argo-site.git`
- repo and run: `yarn build && yarn deploy`
+## Local development
+
+Requires Node.js and Yarn (CI uses Node 22 — [`.github/workflows/gh-pages.yaml`](.github/workflows/gh-pages.yaml)).
+
+```bash
+yarn install
+yarn start
+```
+
+Open http://localhost:8000.
+
+## Publishing
+
+Merging to `master` triggers [`.github/workflows/gh-pages.yaml`](.github/workflows/gh-pages.yaml), which builds the site and pushes `./public` to [argoproj/argoproj.github.io](https://github.com/argoproj/argoproj.github.io). There is no manual deploy step.
+
+## Domains
+
+This repo deploys **[argoproj.github.io](https://argoproj.github.io)** via GitHub Pages. **[argoproj.io](https://argoproj.io)** currently redirects there. DNS for `*.argoproj.io` is not in this repo — it lives in [argoproj/argoproj-deployments](https://github.com/argoproj/argoproj-deployments). **[blog.argoproj.io](https://blog.argoproj.io)** is a [Medium](https://blog.argoproj.io) publication, not built from here.
+
+**Site changes** → this repo. **DNS changes** → [argoproj-deployments](https://github.com/argoproj/argoproj-deployments). **Blog content** → Medium.
