@@ -26,4 +26,6 @@ Merging to `master` triggers [`.github/workflows/gh-pages.yaml`](.github/workflo
 
 This repo deploys **[argoproj.github.io](https://argoproj.github.io)** via GitHub Pages. **[argoproj.io](https://argoproj.io)** currently redirects there. DNS for `*.argoproj.io` is not in this repo — it lives in [argoproj/argoproj-deployments](https://github.com/argoproj/argoproj-deployments). **[blog.argoproj.io](https://blog.argoproj.io)** is a [Medium](https://blog.argoproj.io) publication, not built from here.
 
-**Site changes** → this repo. **DNS changes** → [argoproj-deployments](https://github.com/argoproj/argoproj-deployments). **Blog content** → Medium.
+* **Site changes** → this repo.
+* **DNS changes** → [argoproj-deployments](https://github.com/argoproj/argoproj-deployments).
+* **Blog content** → Medium.
