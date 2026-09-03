@@ -1,5 +1,40 @@
+const fs = require("fs")
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
+const crdRedirects = require("./redirects/crd-redirects")
+const { redirectHtml } = require("./redirects/redirect-html")
+
+function createCrdRedirects({ createRedirect }) {
+  crdRedirects.forEach(({ path: crdPath, url }) => {
+    ;[`/${crdPath}`, `/${crdPath}/`].forEach(fromPath => {
+      createRedirect({
+        fromPath,
+        toPath: url,
+        isPermanent: true,
+        redirectInBrowser: true,
+      })
+    })
+  })
+}
+
+function writeCrdRedirectArtifacts({ reporter }) {
+  const publicDir = path.join(process.cwd(), "public")
+  const netlifyRedirects = []
+
+  crdRedirects.forEach(({ path: crdPath, title, url }) => {
+    const html = redirectHtml({ title, url })
+    const outputDir = path.join(publicDir, crdPath)
+
+    fs.mkdirSync(outputDir, { recursive: true })
+    fs.writeFileSync(path.join(outputDir, "index.html"), html)
+
+    netlifyRedirects.push(`/${crdPath}  ${url}  301`)
+    netlifyRedirects.push(`/${crdPath}/  ${url}  301`)
+  })
+
+  fs.writeFileSync(path.join(publicDir, "_redirects"), `${netlifyRedirects.join("\n")}\n`)
+  reporter.info(`Created ${crdRedirects.length} CRD redirect pages`)
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -17,7 +52,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createCrdRedirects({ createRedirect })
 
   // Templates
   const pageDefault = path.resolve(`./src/templates/page-default.js`)
@@ -61,4 +98,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+}
+
+exports.onPostBuild = ({ reporter }) => {
+  writeCrdRedirectArtifacts({ reporter })
 }
