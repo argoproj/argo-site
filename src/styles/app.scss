@@ -7,6 +7,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html,
+body {
+  // overflow-x: hidden breaks the sticky header in Safari/WebKit (the
+  // header scrolls away instead of staying pinned). overflow-x: clip
+  // fixes the same off-canvas-menu overflow without that regression.
+  overflow-x: clip;
+}
+
 /* Announcement Banner */
 
 .announcement-banner {
